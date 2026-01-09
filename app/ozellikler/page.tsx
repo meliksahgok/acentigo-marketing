@@ -116,14 +116,14 @@ const features = [
 
 export default function FeaturesPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-white border-b border-gray-200">
+      <div className="bg-black border-b border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl py-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Özellikler
           </h1>
-          <p className="text-lg text-gray-600 max-w-3xl">
+          <p className="text-lg text-gray-300 max-w-3xl">
             AcentiGo, acentenizin tüm ihtiyaçlarını karşılayan kapsamlı bir tur satış sistemidir. 
             İşte sistemimizin sunduğu özellikler:
           </p>
@@ -135,16 +135,16 @@ export default function FeaturesPage() {
         <div className="space-y-16">
           {features.map((category, categoryIndex) => (
             <div key={categoryIndex}>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">
                 {category.category}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {category.items.map((item, itemIndex) => (
                   <div
                     key={itemIndex}
-                    className="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
+                    className="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200 hover:border-[#F75700] hover:shadow-lg transition-all group"
                   >
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-[#F75700] transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed">

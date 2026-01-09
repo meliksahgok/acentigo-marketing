@@ -18,14 +18,14 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-white border-b border-gray-200">
+      <div className="bg-black border-b border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl py-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             İletişim
           </h1>
-          <p className="text-lg text-gray-600 max-w-3xl">
+          <p className="text-lg text-gray-300 max-w-3xl">
             Demo talep etmek veya sorularınız için bizimle iletişime geçin
           </p>
         </div>
@@ -36,27 +36,27 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Contact Info */}
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-lg shadow-sm p-6 space-y-6">
+            <div className="bg-gray-50 rounded-lg shadow-sm p-6 space-y-6 border border-gray-200">
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">E-posta</h3>
+                <h3 className="text-lg font-semibold text-black mb-2">E-posta</h3>
                 <a
                   href="mailto:info@acentigo.com"
-                  className="text-[#F75700] hover:underline"
+                  className="text-[#F75700] hover:text-[#FF8C42] transition-colors"
                 >
                   info@acentigo.com
                 </a>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Telefon</h3>
+                <h3 className="text-lg font-semibold text-black mb-2">Telefon</h3>
                 <a
                   href="tel:+905551234567"
-                  className="text-[#F75700] hover:underline"
+                  className="text-[#F75700] hover:text-[#FF8C42] transition-colors"
                 >
                   +90 (555) 123 45 67
                 </a>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Çalışma Saatleri</h3>
+                <h3 className="text-lg font-semibold text-black mb-2">Çalışma Saatleri</h3>
                 <p className="text-gray-600 text-sm">
                   Pazartesi - Cuma: 09:00 - 18:00
                   <br />
@@ -68,8 +68,8 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-lg shadow-sm p-6 md:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <div className="bg-gray-50 rounded-lg shadow-sm p-6 md:p-8 border border-gray-200">
+              <h2 className="text-2xl font-bold text-black mb-6">
                 Demo Talep Formu
               </h2>
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -142,7 +142,7 @@ export default function ContactPage() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-[#F75700] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#c2410c] transition-colors"
+                  className="w-full bg-[#F75700] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#FF8C42] transition-colors shadow-lg shadow-[#F75700]/30"
                 >
                   Gönder
                 </button>

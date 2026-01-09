@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -15,16 +16,20 @@ export default function Footer() {
   }
   
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-black text-white py-12 border-t border-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-[#F75700] to-[#FF8C42] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">A</span>
-              </div>
-              <span className="text-xl font-bold">AcentiGo</span>
+            <div className="flex items-center space-x-3 mb-4">
+              <Image
+                src="/images/acentigo-logo.png"
+                alt="AcentiGo Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
+              <span className="text-xl font-bold text-white">AcentiGo</span>
             </div>
             <p className="text-sm text-gray-400">
               Profesyonel acente tur satış sistemi. İşinizi dijitalleştirin, büyütün.
@@ -40,7 +45,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-gray-400 hover:text-white transition-colors"
+                      className="text-sm text-gray-400 hover:text-[#F75700] transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -52,15 +57,15 @@ export default function Footer() {
           
           {/* Contact */}
           <div>
-            <h3 className="font-semibold mb-4">İletişim</h3>
+            <h3 className="font-semibold mb-4 text-white">İletişim</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="mailto:info@acentigo.com" className="hover:text-white transition-colors">
+                <a href="mailto:info@acentigo.com" className="hover:text-[#F75700] transition-colors">
                   info@acentigo.com
                 </a>
               </li>
               <li>
-                <a href="tel:+905551234567" className="hover:text-white transition-colors">
+                <a href="tel:+905551234567" className="hover:text-[#F75700] transition-colors">
                   +90 (555) 123 45 67
                 </a>
               </li>
