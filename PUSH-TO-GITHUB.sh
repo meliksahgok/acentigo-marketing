@@ -1,19 +1,18 @@
 #!/bin/bash
 # GitHub'a push script'i
-# Kullanım: ./PUSH-TO-GITHUB.sh
+# Kullanım: Bu script'i çalıştırıp GitHub kullanıcı adı ve token'ınızı girin
 
-echo "GitHub repository URL'inizi girin (örn: https://github.com/username/acentigo-marketing.git):"
-read GITHUB_URL
+echo "GitHub kullanıcı adınızı girin:"
+read GITHUB_USER
+
+echo "GitHub Personal Access Token'ınızı girin:"
+read GITHUB_TOKEN
 
 cd /home/acentigo/acentigo-marketing
 
-# Git repository zaten initialize edilmiş
-git add .
-git commit -m "Initial commit - AcentiGo Marketing Site"
-git branch -M main
-git remote add origin $GITHUB_URL
+git remote set-url origin https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/meliksahgok/acentigo-marketing.git
+
 git push -u origin main
 
-echo "✅ Proje GitHub'a push edildi!"
-echo "Şimdi Vercel Dashboard'a gidin ve repository'yi import edin."
+echo "✅ Push tamamlandı!"
 

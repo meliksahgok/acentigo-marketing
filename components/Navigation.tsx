@@ -21,7 +21,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <Image
-              src="/images/acentigo-logo.png"
+              src="/images/acentigo-white-v2.png"
               alt="AcentiGo Logo"
               width={40}
               height={40}
