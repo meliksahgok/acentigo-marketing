@@ -8,82 +8,99 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black text-white relative overflow-hidden">
+      {/* Background Decoration */}
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-900/10 rounded-full blur-[100px] pointer-events-none translate-y-1/2 -translate-x-1/4"></div>
+
       {/* Header */}
-      <div className="bg-black border-b border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl py-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Hakkımızda
-          </h1>
-          <p className="text-lg text-gray-300 max-w-3xl">
-            Turizm sektöründe dijital dönüşüm için çalışıyoruz
-          </p>
+      <div className="relative pt-32 pb-20 border-b border-white/10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
+          <div className="flex flex-col items-center text-center">
+            <span className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-sm mb-6 animate-fade-in-up backdrop-blur-sm">
+              Hikayemiz & Vizyonumuz
+            </span>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in-up [animation-delay:100ms]">
+              Hakkımızda
+            </h1>
+            <p className="text-xl text-gray-400 max-w-3xl leading-relaxed animate-fade-in-up [animation-delay:200ms]">
+              Turizm sektöründe dijital dönüşümün öncüsü olarak, acentelerin iş süreçlerini kolaylaştırıyor ve büyümelerine katkı sağlıyoruz.
+            </p>
+          </div>
         </div>
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12">
-        <div className="bg-gray-50 rounded-lg shadow-sm p-8 md:p-12 space-y-6 border border-gray-200">
-          <section>
-            <h2 className="text-2xl font-bold text-black mb-4">Misyonumuz</h2>
-            <p className="text-gray-600 leading-relaxed">
-              Acentigo olarak, turizm acentelerinin dijital dönüşümüne öncülük ediyoruz.
-              Modern teknoloji ile geleneksel turizm işletmelerini güçlendirerek,
-              sektörde verimliliği artırmayı ve müşteri deneyimini iyileştirmeyi hedefliyoruz.
-            </p>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl py-20 relative z-10">
+        <div className="space-y-12 animate-fade-in-up [animation-delay:300ms]">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <section className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors duration-300">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-2xl">🎯</span>
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-4">Misyonumuz</h2>
+              <p className="text-gray-400 leading-relaxed">
+                Acentigo olarak, turizm acentelerinin dijital dönüşümüne öncülük ediyoruz.
+                Modern teknoloji ile geleneksel turizm işletmelerini güçlendirerek,
+                sektörde verimliliği artırmayı ve müşteri deneyimini iyileştirmeyi hedefliyoruz.
+              </p>
+            </section>
+
+            <section className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors duration-300">
+              <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-2xl">👁️</span>
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-4">Vizyonumuz</h2>
+              <p className="text-gray-400 leading-relaxed">
+                Türkiye'nin önde gelen tur satış sistemi olmak ve acentelerin
+                başarısına katkıda bulunmak. Teknoloji ile turizm sektörünü
+                birleştirerek, sürdürülebilir büyüme sağlamak.
+              </p>
+            </section>
+          </div>
+
+          <section className="bg-zinc-900/50 border border-white/5 rounded-3xl p-8 md:p-12 backdrop-blur-sm relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[80px] pointer-events-none"></div>
+
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">Değerlerimiz</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {[
+                { title: 'Güvenilirlik', desc: 'Veri güvenliği ve şeffaflık en temel önceliğimizdir.', icon: '🛡️' },
+                { title: 'İnovasyon', desc: 'Sürekli gelişen teknolojiyi takip eder ve uygularız.', icon: '💡' },
+                { title: 'Müşteri Odaklılık', desc: 'Çözümlerimizi müşteri ihtiyaçlarına göre şekillendiririz.', icon: '🤝' },
+                { title: 'Basitlik', desc: 'Karmaşık süreçleri anlaşılır ve kolay hale getiririz.', icon: '✨' },
+              ].map((val, idx) => (
+                <div key={idx} className="flex items-start p-4 rounded-xl hover:bg-white/5 transition-colors">
+                  <span className="text-3xl mr-4">{val.icon}</span>
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">{val.title}</h3>
+                    <p className="text-sm text-gray-400">{val.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-bold text-black mb-4">Vizyonumuz</h2>
-            <p className="text-gray-600 leading-relaxed">
-              Türkiye'nin önde gelen tur satış sistemi olmak ve acentelerin
-              başarısına katkıda bulunmak. Teknoloji ile turizm sektörünü
-              birleştirerek, sürdürülebilir büyüme sağlamak.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-black mb-4">Değerlerimiz</h2>
-            <ul className="space-y-3 text-gray-600">
-              <li className="flex items-start">
-                <span className="text-[#F75700] mr-2 font-bold">•</span>
-                <span><strong className="text-black">Güvenilirlik:</strong> Müşterilerimizin verilerini ve işlerini güvende tutmak en öncelikli değerimizdir.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#F75700] mr-2 font-bold">•</span>
-                <span><strong className="text-black">İnovasyon:</strong> Sürekli gelişen teknoloji ile sistemimizi güncel tutuyoruz.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#F75700] mr-2 font-bold">•</span>
-                <span><strong className="text-black">Müşteri Odaklılık:</strong> Her kararımızda müşterilerimizin ihtiyaçlarını ön planda tutuyoruz.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#F75700] mr-2 font-bold">•</span>
-                <span><strong className="text-black">Basitlik:</strong> Karmaşık işlemleri basit ve anlaşılır hale getiriyoruz.</span>
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-black mb-4">Neden Acentigo?</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Acentigo, turizm acentelerinin ihtiyaçlarını derinlemesine anlayarak geliştirilmiştir.
-              Sistemimiz, sektördeki deneyimimiz ve teknoloji uzmanlığımızın birleşimidir.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
+          <section className="text-center py-12">
+            <h2 className="text-3xl font-bold text-white mb-6">Neden Acentigo?</h2>
+            <p className="text-gray-400 leading-relaxed max-w-3xl mx-auto mb-8 text-lg">
+              Acentigo, turizm sektöründeki deneyimimiz ve teknoloji uzmanlığımızın birleşimidir.
               Küçük acentelerden büyük işletmelere kadar her ölçekte çalışan,
               ölçeklenebilir ve güvenilir bir çözüm sunuyoruz.
             </p>
-          </section>
 
-          <div className="pt-6 border-t border-gray-200">
             <Link
               href="/iletisim"
-              className="inline-block bg-[#F75700] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#FF8C42] transition-colors shadow-lg shadow-[#F75700]/30"
+              className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-hover hover:scale-105 transition-all shadow-[0_0_20px_rgba(247,87,0,0.4)]"
             >
-              Bizimle İletişime Geçin
+              <span>Bizimle İletişime Geçin</span>
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </Link>
-          </div>
+          </section>
+
         </div>
       </div>
     </div>
