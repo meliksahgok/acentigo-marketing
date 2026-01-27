@@ -20,6 +20,7 @@ export default function Navigation() {
   const navLinks = [
     { href: '/', label: 'Anasayfa' },
     { href: '/ozellikler', label: 'Özellikler' },
+    { href: '/teknolojimiz', label: 'Teknolojimiz' },
     { href: '/hakkimizda', label: 'Hakkımızda' },
     { href: '/iletisim', label: 'İletişim' },
   ]
