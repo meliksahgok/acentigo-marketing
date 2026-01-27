@@ -116,7 +116,7 @@ const features = [
 
 export default function FeaturesPage() {
   return (
-    <div className="min-h-screen bg-black text-white relative">
+    <div className="min-h-screen bg-black text-white relative overflow-hidden">
       {/* Background Effect */}
       <div className="fixed inset-0 bg-gradient-radial from-zinc-900 to-black pointer-events-none"></div>
 
