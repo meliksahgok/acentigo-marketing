@@ -14,7 +14,7 @@ export default function AboutPage() {
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-900/10 rounded-full blur-[100px] pointer-events-none translate-y-1/2 -translate-x-1/4"></div>
 
       {/* Header */}
-      <div className="relative pt-32 pb-20 border-b border-white/10">
+      <div className="relative pt-24 md:pt-32 pb-12 md:pb-20 border-b border-white/10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
           <div className="flex flex-col items-center text-center">
             <span className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-sm mb-6 animate-fade-in-up backdrop-blur-sm">

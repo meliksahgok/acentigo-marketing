@@ -25,7 +25,7 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight animate-fade-in-up [animation-delay:200ms]">
+          <h1 className="text-4xl md:text-7xl font-bold tracking-tight animate-fade-in-up [animation-delay:200ms]">
             Acenteniz İçin
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400 drop-shadow-[0_0_30px_rgba(229,61,21,0.3)]">

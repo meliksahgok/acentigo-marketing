@@ -48,7 +48,7 @@ export default function TechnologyPage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[150px] pointer-events-none"></div>
 
             {/* Header */}
-            <div className="relative pt-32 pb-20 border-b border-white/10">
+            <div className="relative pt-24 md:pt-32 pb-12 md:pb-20 border-b border-white/10">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
                     <div className="text-center">
                         <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-in-up">
