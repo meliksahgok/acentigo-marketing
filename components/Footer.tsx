@@ -7,11 +7,13 @@ export default function Footer() {
   const footerLinks = {
     Ürün: [
       { href: '/ozellikler', label: 'Özellikler' },
+      { href: '/teknolojimiz', label: 'Teknolojimiz' },
       { href: '/hakkimizda', label: 'Hakkımızda' },
     ],
     Destek: [
       { href: '/iletisim', label: 'İletişim' },
       { href: 'mailto:info@acentigo.com', label: 'E-posta' },
+      { href: 'tel:+905551234567', label: '+90 (555) 123 45 67' },
     ],
   }
 
