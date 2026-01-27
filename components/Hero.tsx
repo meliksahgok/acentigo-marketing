@@ -1,14 +1,21 @@
+'use client'
+
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+
+const HeroBackground = dynamic(() => import('./HeroBackground'), { ssr: false })
 
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-black text-white pt-20">
-      {/* Dynamic Background Effects */}
-      <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-      <div className="absolute inset-0 bg-gradient-radial from-transparent to-black opacity-80"></div>
+      {/* Three.js Background */}
+      <HeroBackground />
+
+      {/* Gradient Overlay for Readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black z-0 pointer-events-none"></div>
 
       {/* Glow Effects */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] animate-pulse-slow"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] animate-pulse-slow z-0"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-5xl mx-auto space-y-8">
