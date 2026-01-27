@@ -13,7 +13,7 @@ export default function Footer() {
     Destek: [
       { href: '/iletisim', label: 'İletişim' },
       { href: 'mailto:info@acentigo.com', label: 'E-posta' },
-      { href: 'tel:+905551234567', label: '+90 (555) 123 45 67' },
+      { href: 'tel:+905531440661', label: '+90 (553) 144 06 61' },
     ],
   }
 

@@ -64,8 +64,8 @@ export default function ContactPage() {
                 <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary mr-3 text-sm">📞</span>
                 Telefon
               </h3>
-              <a href="tel:+905551234567" className="text-gray-300 hover:text-primary transition-colors block text-lg">
-                +90 (555) 123 45 67
+              <a href="tel:+905531440661" className="text-gray-300 hover:text-primary transition-colors block text-lg">
+                +90 (553) 144 06 61
               </a>
             </div>
 
