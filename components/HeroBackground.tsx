@@ -10,7 +10,7 @@ function ParticleNetwork(props: any) {
 
     // Generate random points on a sphere
     const [positions, colors] = useMemo(() => {
-        const count = 2000
+        const count = 5000 // Increased count
         const positions = new Float32Array(count * 3)
         const colors = new Float32Array(count * 3)
         const colorProxy = new THREE.Color()
@@ -19,7 +19,7 @@ function ParticleNetwork(props: any) {
             // Random point on sphere surface (roughly)
             const theta = Math.random() * Math.PI * 2
             const phi = Math.acos(2 * Math.random() - 1)
-            const r = 1.5 + Math.random() * 0.5 // Radius between 1.5 and 2.0
+            const r = 1.3 + Math.random() * 1.5 // Wider radius spread
 
             const x = r * Math.sin(phi) * Math.cos(theta)
             const y = r * Math.sin(phi) * Math.sin(theta)
@@ -29,9 +29,9 @@ function ParticleNetwork(props: any) {
             positions[i * 3 + 1] = y
             positions[i * 3 + 2] = z
 
-            // Colors: mix of brand orange and white/gray
-            const isBrand = Math.random() > 0.8
-            colorProxy.set(isBrand ? '#F75700' : (Math.random() > 0.5 ? '#ffffff' : '#4a4a4a'))
+            // Colors: mix of brand orange (more frequent) and white
+            const isBrand = Math.random() > 0.6
+            colorProxy.set(isBrand ? '#F75700' : '#ffffff') // Brighter colors, no dark gray
 
             colors[i * 3] = colorProxy.r
             colors[i * 3 + 1] = colorProxy.g
@@ -43,8 +43,8 @@ function ParticleNetwork(props: any) {
 
     useFrame((state, delta) => {
         if (ref.current) {
-            ref.current.rotation.x -= delta / 15
-            ref.current.rotation.y -= delta / 20
+            ref.current.rotation.x -= delta / 20
+            ref.current.rotation.y -= delta / 30
         }
     })
 
@@ -54,9 +54,10 @@ function ParticleNetwork(props: any) {
                 <PointMaterial
                     transparent
                     vertexColors
-                    size={0.015}
+                    size={0.035} // Increased size significantly
                     sizeAttenuation={true}
                     depthWrite={false}
+                    opacity={0.8}
                 />
             </Points>
         </group>
