@@ -74,8 +74,8 @@ export default function ContactPage() {
                 <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary mr-3 text-sm">🕒</span>
                 Çalışma Saatleri
               </h3>
-              <div className="space-y-2 text-gray-300">
-                <p className="flex justify-between">
+              <div className="text-gray-300">
+                <p className="flex items-center gap-2">
                   <span>Pazartesi - Cuma:</span>
                   <span className="text-white">09:00 - 18:00</span>
                 </p>
