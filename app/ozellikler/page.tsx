@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Özellikler - AcentiGo',
-  description: 'AcentiGo tur satış sisteminin tüm özelliklerini keşfedin. Tur yönetimi, rezervasyon, ödeme, muhasebe ve daha fazlası.',
+  title: 'Özellikler - Acentigo',
+  description: 'Acentigo tur satış sisteminin tüm özelliklerini keşfedin. Tur yönetimi, rezervasyon, ödeme, muhasebe ve daha fazlası.',
 }
 
 const features = [
@@ -124,7 +124,7 @@ export default function FeaturesPage() {
             Özellikler
           </h1>
           <p className="text-lg text-gray-300 max-w-3xl">
-            AcentiGo, acentenizin tüm ihtiyaçlarını karşılayan kapsamlı bir tur satış sistemidir. 
+            Acentigo, acentenizin tüm ihtiyaçlarını karşılayan kapsamlı bir tur satış sistemidir.
             İşte sistemimizin sunduğu özellikler:
           </p>
         </div>

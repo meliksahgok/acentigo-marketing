@@ -20,7 +20,7 @@ cd /home/acentigo/acentigo-marketing
 GITHUB_URL="https://github.com/YOUR-USERNAME/acentigo-marketing.git"
 
 git add .
-git commit -m "Initial commit - AcentiGo Marketing Site"
+git commit -m "Initial commit - Acentigo Marketing Site"
 git branch -M main
 git remote add origin $GITHUB_URL
 git push -u origin main

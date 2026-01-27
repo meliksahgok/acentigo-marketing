@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Hakkımızda - AcentiGo',
-  description: 'AcentiGo hakkında bilgi edinin. Turizm sektöründe dijital dönüşüm için çalışıyoruz.',
+  title: 'Hakkımızda - Acentigo',
+  description: 'Acentigo hakkında bilgi edinin. Turizm sektöründe dijital dönüşüm için çalışıyoruz.',
 }
 
 export default function AboutPage() {
@@ -27,8 +27,8 @@ export default function AboutPage() {
           <section>
             <h2 className="text-2xl font-bold text-black mb-4">Misyonumuz</h2>
             <p className="text-gray-600 leading-relaxed">
-              AcentiGo olarak, turizm acentelerinin dijital dönüşümüne öncülük ediyoruz. 
-              Modern teknoloji ile geleneksel turizm işletmelerini güçlendirerek, 
+              Acentigo olarak, turizm acentelerinin dijital dönüşümüne öncülük ediyoruz.
+              Modern teknoloji ile geleneksel turizm işletmelerini güçlendirerek,
               sektörde verimliliği artırmayı ve müşteri deneyimini iyileştirmeyi hedefliyoruz.
             </p>
           </section>
@@ -36,8 +36,8 @@ export default function AboutPage() {
           <section>
             <h2 className="text-2xl font-bold text-black mb-4">Vizyonumuz</h2>
             <p className="text-gray-600 leading-relaxed">
-              Türkiye'nin önde gelen tur satış sistemi olmak ve acentelerin 
-              başarısına katkıda bulunmak. Teknoloji ile turizm sektörünü 
+              Türkiye'nin önde gelen tur satış sistemi olmak ve acentelerin
+              başarısına katkıda bulunmak. Teknoloji ile turizm sektörünü
               birleştirerek, sürdürülebilir büyüme sağlamak.
             </p>
           </section>
@@ -65,13 +65,13 @@ export default function AboutPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-black mb-4">Neden AcentiGo?</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">Neden Acentigo?</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              AcentiGo, turizm acentelerinin ihtiyaçlarını derinlemesine anlayarak geliştirilmiştir. 
+              Acentigo, turizm acentelerinin ihtiyaçlarını derinlemesine anlayarak geliştirilmiştir.
               Sistemimiz, sektördeki deneyimimiz ve teknoloji uzmanlığımızın birleşimidir.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Küçük acentelerden büyük işletmelere kadar her ölçekte çalışan, 
+              Küçük acentelerden büyük işletmelere kadar her ölçekte çalışan,
               ölçeklenebilir ve güvenilir bir çözüm sunuyoruz.
             </p>
           </section>

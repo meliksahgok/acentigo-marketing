@@ -8,7 +8,29 @@
   }
   
   body {
-    @apply text-gray-900;
+    @apply text-gray-200 bg-black antialiased overflow-x-hidden;
+  }
+
+  /* Modern Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-zinc-950;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-800 rounded-full border-2 border-zinc-950;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-zinc-700;
+  }
+
+  /* Selection Color */
+  ::selection {
+    @apply bg-primary/30 text-white;
   }
 }
 

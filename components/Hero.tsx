@@ -2,30 +2,47 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-black via-gray-900 to-black text-white py-20 md:py-28 relative overflow-hidden">
-      {/* Orange accent gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#F75700]/20 via-transparent to-[#FF8C42]/20"></div>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-black text-white pt-20">
+      {/* Dynamic Background Effects */}
+      <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+      <div className="absolute inset-0 bg-gradient-radial from-transparent to-black opacity-80"></div>
+
+      {/* Glow Effects */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] animate-pulse-slow"></div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center max-w-5xl mx-auto space-y-8">
+          <div className="inline-block animate-fade-in-up">
+            <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm md:text-base text-gray-300 backdrop-blur-sm">
+              🚀 Acenteniz için en gelişmiş çözüm
+            </span>
+          </div>
+
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight animate-fade-in-up [animation-delay:200ms]">
             Acenteniz İçin
             <br />
-            <span className="text-[#F75700]">Profesyonel Tur Satış Sistemi</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400 drop-shadow-[0_0_30px_rgba(247,87,0,0.3)]">
+              Profesyonel Tur Satış Sistemi
+            </span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-            Tur yönetimi, rezervasyon takibi, ödeme entegrasyonu ve muhasebe işlemlerinizi 
-            tek platformda yönetin. Modern, güvenli ve kullanıcı dostu çözüm.
+
+          <p className="text-lg md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed animate-fade-in-up [animation-delay:400ms]">
+            Tur yönetimi, rezervasyon takibi, ödeme entegrasyonu ve muhasebe işlemlerinizi
+            tek platformda yönetin. Modern, güvenli ve kullanıcı dostu.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8 animate-fade-in-up [animation-delay:600ms]">
             <Link
               href="/iletisim"
-              className="bg-[#F75700] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#FF8C42] transition-colors text-center shadow-lg shadow-[#F75700]/30"
+              className="group relative px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(247,87,0,0.5)]"
             >
-              Demo Talep Et
+              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+              <span className="relative">Demo Talep Et</span>
             </Link>
+
             <Link
               href="/ozellikler"
-              className="bg-transparent border-2 border-[#F75700] text-[#F75700] px-8 py-3 rounded-lg font-semibold hover:bg-[#F75700] hover:text-white transition-colors text-center"
+              className="group px-8 py-4 bg-white/5 border border-white/10 text-white rounded-xl font-bold text-lg backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/20 hover:scale-105"
             >
               Özellikleri İncele
             </Link>

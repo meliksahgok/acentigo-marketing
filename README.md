@@ -1,4 +1,4 @@
-# AcentiGo Marketing Site
+# Acentigo Marketing Site
 
 Kurumsal tanıtım sayfası - Next.js + Vercel
 
