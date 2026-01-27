@@ -23,11 +23,10 @@ export default function Navigation() {
             <Image
               src="/images/acentigo-white-v2.png"
               alt="AcentiGo Logo"
-              width={40}
+              width={140}
               height={40}
               className="object-contain"
             />
-            <span className="text-xl font-bold text-white">AcentiGo</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -96,6 +95,6 @@ export default function Navigation() {
           </div>
         )}
       </div>
-    </nav>
+    </nav >
   )
 }
