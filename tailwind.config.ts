@@ -10,10 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#F75700',
-          hover: '#FF6A1A',
-          dark: '#CC4800',
-          light: '#FF8542',
+          DEFAULT: '#e53d15',
+          hover: '#FF5722', // Slightly lighter than e53d15
+          dark: '#B72D0F', // Darker shade of e53d15
+          light: '#FF7D52', // Lighter shade of e53d15
         },
         dark: {
           bg: '#050505',
@@ -24,7 +24,7 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero-glow': 'radial-gradient(circle at center, rgba(247, 87, 0, 0.15) 0%, rgba(0, 0, 0, 0) 70%)',
+        'hero-glow': 'radial-gradient(circle at center, rgba(229, 61, 21, 0.15) 0%, rgba(0, 0, 0, 0) 70%)',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out forwards',

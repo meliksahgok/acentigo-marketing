@@ -92,7 +92,7 @@ export default function AboutPage() {
 
             <Link
               href="/iletisim"
-              className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-hover hover:scale-105 transition-all shadow-[0_0_20px_rgba(247,87,0,0.4)]"
+              className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-hover hover:scale-105 transition-all shadow-[0_0_20px_rgba(229,61,21,0.4)]"
             >
               <span>Bizimle İletişime Geçin</span>
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -169,7 +169,7 @@ export default function ContactPage() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(247,87,0,0.4)] hover:scale-[1.02] transition-all duration-300"
+                  className="w-full bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(229,61,21,0.4)] hover:scale-[1.02] transition-all duration-300"
                 >
                   Gönder
                 </button>

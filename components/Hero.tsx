@@ -28,7 +28,7 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight animate-fade-in-up [animation-delay:200ms]">
             Acenteniz İçin
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400 drop-shadow-[0_0_30px_rgba(247,87,0,0.3)]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400 drop-shadow-[0_0_30px_rgba(229,61,21,0.3)]">
               Profesyonel Tur Satış Sistemi
             </span>
           </h1>
@@ -41,7 +41,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8 animate-fade-in-up [animation-delay:600ms]">
             <Link
               href="/iletisim"
-              className="group relative px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(247,87,0,0.5)]"
+              className="group relative px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(229,61,21,0.5)]"
             >
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
               <span className="relative">Demo Talep Et</span>

@@ -60,7 +60,7 @@ export default function Navigation() {
             ))}
             <Link
               href="/iletisim"
-              className="relative overflow-hidden bg-primary px-5 py-2.5 rounded-full text-white text-sm font-semibold transition-all duration-300 hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(247,87,0,0.4)] group"
+              className="relative overflow-hidden bg-primary px-5 py-2.5 rounded-full text-white text-sm font-semibold transition-all duration-300 hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(229,61,21,0.4)] group"
             >
               <span className="relative z-10">Demo Talep Et</span>
             </Link>
