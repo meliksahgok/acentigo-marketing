@@ -79,10 +79,6 @@ export default function ContactPage() {
                   <span>Pazartesi - Cuma:</span>
                   <span className="text-white">09:00 - 18:00</span>
                 </p>
-                <p className="flex justify-between">
-                  <span>Cumartesi:</span>
-                  <span className="text-white">10:00 - 14:00</span>
-                </p>
               </div>
             </div>
 
