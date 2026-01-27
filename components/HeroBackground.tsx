@@ -32,7 +32,7 @@ function Starfield(props: any) {
 
             for (let i = 0; i < posArray.length; i += 3) {
                 // Move stars towards camera (positive z direction)
-                posArray[i + 2] += delta * 8 // Speed
+                posArray[i + 2] += delta * 2 // Speed
 
                 // Reset star when it passes the camera
                 if (posArray[i + 2] > 10) {
