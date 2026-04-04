@@ -12,13 +12,18 @@ export const authOptions: NextAuthOptions = {
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) return null
-        const { default: prisma } = await import('@/lib/prisma')
-        const email = credentials.email.toLowerCase().trim()
-        const user = await prisma.user.findUnique({ where: { email } })
-        if (!user) return null
-        const ok = await bcrypt.compare(credentials.password, user.passwordHash)
-        if (!ok) return null
-        return { id: user.id, email: user.email, name: user.name }
+        try {
+          const { default: prisma } = await import('@/lib/prisma')
+          const email = credentials.email.toLowerCase().trim()
+          const user = await prisma.user.findUnique({ where: { email } })
+          if (!user) return null
+          const ok = await bcrypt.compare(credentials.password, user.passwordHash)
+          if (!ok) return null
+          return { id: user.id, email: user.email, name: user.name }
+        } catch (err) {
+          console.error('[next-auth authorize]', err)
+          return null
+        }
       },
     }),
   ],
