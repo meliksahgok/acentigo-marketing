@@ -1,0 +1,17 @@
+# SQLite canlı: /data volume kalıcıdır (container silinse bile volume kalır)
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - acentigo_sqlite:/data
+    environment:
+      DATABASE_URL: "file:/data/prod.db"
+      NEXTAUTH_URL: "http://localhost:3000"
+      NEXTAUTH_SECRET: "canlida-mutlaka-degistirin-openssl-rand-base64-32"
+      ADMIN_EMAIL: "admin@acentigo.com"
+      ADMIN_PASSWORD: "degistir123"
+
+volumes:
+  acentigo_sqlite:

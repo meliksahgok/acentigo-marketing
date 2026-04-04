@@ -61,7 +61,9 @@ Cloudflare DNS ayarları:
 
 İletişim formu başvuruları veritabanına kaydedilir; panelde listelenir ve durum (Yeni / İletişim kuruldu / Kapatıldı) güncellenebilir.
 
-**Vercel / sunucusuz ortam:** SQLite dosyası kalıcı olmaz; üretimde PostgreSQL (`DATABASE_URL`) kullanın ve `schema.prisma` içinde `provider = "postgresql"` yapın.
+**Vercel / sunucusuz ortam:** SQLite dosyası kalıcı olmaz; ya **PostgreSQL** (`DATABASE_URL`, `provider = "postgresql"`) kullanın ya da uygulamayı **Docker / VPS** gibi kalıcı disk olan bir yerde çalıştırın.
+
+**Canlıda SQLite:** `DEPLOY-CANLI-SQLITE.md` ve `docker-compose.yml` — `docker compose up` ile volume üzerinde `prod.db` tutulur.
 
 ## Teknolojiler
 
