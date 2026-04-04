@@ -1,8 +1,10 @@
 import { Suspense } from 'react'
-import { getServerSession } from 'next-auth'
+import { getServerSession } from 'next-auth/next'
 import { redirect } from 'next/navigation'
 import { authOptions } from '@/lib/auth'
 import LoginForm from './LoginForm'
+
+export const dynamic = 'force-dynamic'
 
 export default async function AdminLoginPage() {
   const session = await getServerSession(authOptions)
