@@ -16,10 +16,19 @@
 6. **Output Directory:** `.next` (otomatik)
 7. **Install Command:** `npm install` (otomatik)
 
-### Adım 3: Environment Variables (Gerekirse)
-Şu an için environment variable gerekmiyor, ancak ileride gerekirse:
-- Settings → Environment Variables
-- Key-Value çiftleri ekleyin
+### Adım 3: Environment Variables (zorunlu)
+
+Panel ve iletişim formu için Vercel’de **Settings → Environment Variables** altında tanımlayın (Production / Preview için):
+
+| Değişken | Açıklama |
+|----------|-----------|
+| `DATABASE_URL` | **PostgreSQL** bağlantı adresi (Neon, Supabase vb.). Sunucusuz ortamda SQLite kullanılamaz. |
+| `NEXTAUTH_SECRET` | Güçlü rastgele metin (`openssl rand -base64 32`). |
+| `NEXTAUTH_URL` | Canlı site kök URL’si, örn. `https://acentigo-marketing.vercel.app` veya özel domain. |
+| `ADMIN_EMAIL` | Seed ile oluşturulacak admin e-postası (isteğe bağlı). |
+| `ADMIN_PASSWORD` | Seed şifresi (isteğe bağlı). |
+
+İlk veritabanı şeması için yerelde `npx prisma db push` benzeri işlemi Postgres’e uygulayın; Vercel build sırasında `prisma migrate deploy` eklemek isterseniz Build Command’ı özelleştirin. Admin kullanıcıyı oluşturmak için Postgres’e karşı bir kez `npm run db:seed` çalıştırmanız gerekir (ör. yerel makineden `DATABASE_URL` üretim adresi olacak şekilde).
 
 ### Adım 4: Deploy
 1. **"Deploy"** butonuna tıklayın
@@ -88,6 +97,12 @@ vercel --prod
 - Build loglarını kontrol edin
 - Environment variables eksik olabilir
 - Dependencies eksik olabilir
+
+### Push sonrası sitede değişiklik görünmüyor
+- **Vercel → Project → Deployments:** Son commit için deploy **Ready** mi, yoksa **Error** mı? Hata varsa önceki sürüm yayında kalır.
+- **Ana sayfa görünümü** büyük ölçüde aynıdır; yeni özellikler: **`/admin`** (giriş), **`/admin/login`**, İletişim sayfasında formun sunucuya gönderilmesi.
+- Özel domain + **Cloudflare** tam önbellek kullanıyorsanız ilgili URL için önbelleği temizleyin veya tarayıcıda gizli pencerede deneyin.
+- Yerelde `npm run dev` çalışıyorsa dosya kaydından sonra sayfayı yenileyin; gerekirse sunucuyu durdurup tekrar başlatın.
 
 ---
 
