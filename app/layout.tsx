@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
+import { Providers } from './providers'
 
 export const metadata: Metadata = {
   title: 'Acentigo - Profesyonel Acente Tur Satış Sistemi',
-  description: 'Tur yönetimi, rezervasyon takibi, ödeme entegrasyonu ve muhasebe sistemi. Acenteniz için kapsamlı tur satış çözümü. Modern, güvenli ve kullanıcı dostu.',
+  description:
+    'Tur yönetimi, rezervasyon takibi, ödeme entegrasyonu ve muhasebe sistemi. Acenteniz için kapsamlı tur satış çözümü. Modern, güvenli ve kullanıcı dostu.',
   keywords: 'tur satış sistemi, acente yönetim sistemi, tur rezervasyon, turizm yazılımı',
   icons: {
     icon: '/images/acentigo-favicon.png',
@@ -22,11 +22,8 @@ export default function RootLayout({
   return (
     <html lang="tr" className="scroll-smooth">
       <body className="antialiased">
-        <Navigation />
-        {children}
-        <Footer />
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
 }
-

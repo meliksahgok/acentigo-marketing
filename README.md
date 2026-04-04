@@ -48,10 +48,26 @@ Cloudflare DNS ayarları:
 - `acentigo.com` → CNAME: `cname.vercel-dns.com`
 - `www.acentigo.com` → CNAME: `cname.vercel-dns.com`
 
+## Yönetim paneli (demo başvuruları)
+
+1. `.env.example` dosyasını `.env` olarak kopyalayın; `NEXTAUTH_SECRET` için güçlü rastgele bir değer verin.
+2. Veritabanı ve admin kullanıcı:
+   ```bash
+   npx prisma db push
+   npm run db:seed
+   ```
+   Varsayılan giriş: `ADMIN_EMAIL` / `ADMIN_PASSWORD` (`.env` içinde; üretimde mutlaka değiştirin).
+3. Panel: [http://localhost:3000/admin](http://localhost:3000/admin) — giriş [http://localhost:3000/admin/login](http://localhost:3000/admin/login).
+
+İletişim formu başvuruları veritabanına kaydedilir; panelde listelenir ve durum (Yeni / İletişim kuruldu / Kapatıldı) güncellenebilir.
+
+**Vercel / sunucusuz ortam:** SQLite dosyası kalıcı olmaz; üretimde PostgreSQL (`DATABASE_URL`) kullanın ve `schema.prisma` içinde `provider = "postgresql"` yapın.
+
 ## Teknolojiler
 
 - Next.js 14 (App Router)
 - TypeScript
 - Tailwind CSS
 - React 18
+- Prisma (SQLite geliştirme), NextAuth (credentials)
 
