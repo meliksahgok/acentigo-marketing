@@ -12,7 +12,7 @@
 2. GitHub repository'lerinizden **"acentigo-marketing"** seçin
 3. **Framework Preset:** Next.js (otomatik algılanır)
 4. **Root Directory:** `./` (boş bırakın)
-5. **Build Command:** Repoda `vercel.json` tanımlıdır — `npm run vercel-build` (`prisma migrate deploy` + build). Dashboard’da elle değiştirmeyin.
+5. **Build Command:** Repoda `vercel.json` tanımlıdır — `npm run vercel-build` (DATABASE_URL build’de varsa migrate + generate + `next build`). Dashboard’da elle değiştirmeyin.
 6. **Output Directory:** `.next` (otomatik)
 7. **Install Command:** `npm install` (otomatik)
 
@@ -29,7 +29,9 @@ Panel ve iletişim formu için Vercel’de **Settings → Environment Variables*
 | `ADMIN_PASSWORD` | Seed şifresi (isteğe bağlı). |
 | `NEXT_PUBLIC_SITE_URL` | Örn. `https://acentigo.com` (sitemap / OG). |
 
-İlk deploy’da **build**, `prisma migrate deploy` ile şemayı Postgres’e uygular (`vercel.json`). Sonrasında **admin kullanıcı** için bir kez yerelden (veya CI’den) üretim `DATABASE_URL` ile:
+**Build ve veritabanı:** `npm run vercel-build`, yalnızca ortamda **`DATABASE_URL` build sırasında tanımlıysa** `prisma migrate deploy` çalıştırır. Vercel’de `DATABASE_URL` sadece **Runtime** için işaretliyse migrate atlanır (build artık bu yüzden düşmez); şemayı bir kez yerelde `DATABASE_URL="…" npx prisma migrate deploy` ile uygulayın veya Vercel’de aynı değişkeni **Build** için de açın.
+
+**Admin kullanıcı** için bir kez üretim `DATABASE_URL` ile:
 
 ```bash
 npm run db:seed
