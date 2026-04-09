@@ -8,15 +8,24 @@ function run(cmd) {
   execSync(cmd, { stdio: 'inherit' })
 }
 
-if (process.env.DATABASE_URL?.trim()) {
-  console.log('[vercel-build] DATABASE_URL is set → prisma migrate deploy')
+const hasDb = process.env.DATABASE_URL?.trim()
+const hasDirect = process.env.DATABASE_URL_UNPOOLED?.trim()
+
+if (hasDb && hasDirect) {
+  console.log('[vercel-build] DATABASE_URL + DATABASE_URL_UNPOOLED set → prisma migrate deploy')
   run('npx prisma migrate deploy')
 } else {
+  if (hasDb && !hasDirect) {
+    console.warn(
+      '[vercel-build] DATABASE_URL_UNPOOLED eksik → migrate atlanıyor (Neon’da unpooled URL ekleyin veya Build env’de ikisini de açın).',
+    )
+  } else {
+    console.warn(
+      '[vercel-build] DATABASE_URL missing at build time → skipping prisma migrate deploy',
+    )
+  }
   console.warn(
-    '[vercel-build] DATABASE_URL missing at build time → skipping migrate deploy',
-  )
-  console.warn(
-    '[vercel-build] Apply schema once: npx prisma migrate deploy (with prod DATABASE_URL), or enable DATABASE_URL for Build in Vercel.',
+    '[vercel-build] Şema: DATABASE_URL + DATABASE_URL_UNPOOLED ile: npx prisma migrate deploy',
   )
 }
 

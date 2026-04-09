@@ -3,8 +3,11 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  // Havuzlu (Neon pooler / Vercel) — uygulama çalışırken
+  url       = env("DATABASE_URL")
+  // Havuzsuz — prisma migrate; Neon’da genelde *-pooler* olmayan host
+  directUrl = env("DATABASE_URL_UNPOOLED")
 }
 
 model User {

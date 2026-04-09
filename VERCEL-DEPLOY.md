@@ -22,18 +22,20 @@ Panel ve iletişim formu için Vercel’de **Settings → Environment Variables*
 
 | Değişken | Açıklama |
 |----------|-----------|
-| `DATABASE_URL` | **PostgreSQL** bağlantı adresi (Neon, Supabase vb.). Sunucusuz ortamda SQLite kullanılamaz. |
+| `DATABASE_URL` | **PostgreSQL** havuzlu bağlantı (Neon’da `pooler` host’lu satır / `POSTGRES_PRISMA_URL`). |
+| `DATABASE_URL_UNPOOLED` | Aynı veritabanına **doğrudan** bağlantı (Neon’da pooler **olmayan** host; `POSTGRES_URL_NON_POOLING` ile aynı). `prisma migrate` için zorunlu. |
 | `NEXTAUTH_SECRET` | Güçlü rastgele metin (`openssl rand -base64 32`). |
 | `NEXTAUTH_URL` | Canlı site kök URL’si, örn. `https://acentigo-marketing.vercel.app` veya özel domain. |
 | `ADMIN_EMAIL` | Seed ile oluşturulacak admin e-postası (isteğe bağlı). |
 | `ADMIN_PASSWORD` | Seed şifresi (isteğe bağlı). |
 | `NEXT_PUBLIC_SITE_URL` | Örn. `https://acentigo.com` (sitemap / OG). |
 
-**Build ve veritabanı:** `npm run vercel-build`, yalnızca ortamda **`DATABASE_URL` build sırasında tanımlıysa** `prisma migrate deploy` çalıştırır. Vercel’de `DATABASE_URL` sadece **Runtime** için işaretliyse migrate atlanır (build artık bu yüzden düşmez); şemayı bir kez yerelde `DATABASE_URL="…" npx prisma migrate deploy` ile uygulayın veya Vercel’de aynı değişkeni **Build** için de açın.
+**Build ve veritabanı:** `npm run vercel-build`, build ortamında **`DATABASE_URL` ve `DATABASE_URL_UNPOOLED` ikisi de** tanımlıysa `prisma migrate deploy` çalışır. Eksikse migrate atlanır (build yine biter); şemayı yerelde veya Build env’de ikisini de açıp redeploy ile uygulayın.
 
-**Admin kullanıcı** için bir kez üretim `DATABASE_URL` ile:
+**Admin kullanıcı** için bir kez (ortamda her iki DB değişkeni set iken):
 
 ```bash
+npx prisma migrate deploy
 npm run db:seed
 ```
 
