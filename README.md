@@ -65,11 +65,19 @@ Cloudflare DNS ayarları:
 
 **Canlıda SQLite:** `DEPLOY-CANLI-SQLITE.md` ve `docker-compose.yml` — `docker compose up` ile volume üzerinde `prod.db` tutulur.
 
+## Dil ve SEO
+
+- **Türkçe (varsayılan, URL öneki yok):** `/`, `/ozellikler`, `/hakkimizda`, `/iletisim`, `/teknolojimiz`
+- **İngilizce:** `/en`, `/en/features`, `/en/about`, `/en/contact`, `/en/technology`
+- Sayfa başlıkları, açıklamalar, `hreflang` alternates, `sitemap.xml`, `robots.txt`, Organization + SoftwareApplication **JSON-LD** yapılandırıldı.
+- Canlıda `NEXT_PUBLIC_SITE_URL` ortam değişkenini gerçek alan adınıza ayarlayın.
+
 ## Teknolojiler
 
 - Next.js 14 (App Router)
 - TypeScript
 - Tailwind CSS
 - React 18
+- next-intl (TR/EN, yerelleştirilmiş path’ler)
 - Prisma (SQLite geliştirme), NextAuth (credentials)
 

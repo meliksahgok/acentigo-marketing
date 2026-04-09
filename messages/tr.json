@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Acentigo | Acente ve Tur Satış Yazılımı",
+      "description": "Bulut tabanlı tur yönetimi, online rezervasyon, Stripe uyumlu ödeme akışları, muhasebe ve raporlama—modern acenteler için tek platform.",
+      "keywords": "tur satış sistemi, acente yazılımı, rezervasyon yazılımı, Stripe ödeme, tur operatörü CRM, DMC yazılımı"
+    },
+    "features": {
+      "title": "Özellikler | Acentigo Tur ve Acente Platformu",
+      "description": "Tur envanteri, rezervasyonlar, Stripe odaklı ödeme süreçleri, otel modülü, muhasebe, müşteri CRM, transfer ve mobil uyumlu satış—Acentigo yetenekleri.",
+      "keywords": "tur yönetimi özellikleri, acente yazılımı, Stripe entegrasyonu, muhasebe modülü, otel modülü"
+    },
+    "about": {
+      "title": "Hakkımızda | Acentigo",
+      "description": "Acentelerin operasyonlarını güvenli ve ölçeklenebilir yazılımla dijitalleştirmesine yardımcı oluyoruz—misyon, vizyon ve değerlerimiz.",
+      "keywords": "Acentigo hakkında, turizm teknolojisi, acente dijital dönüşüm"
+    },
+    "contact": {
+      "title": "İletişim ve Demo | Acentigo",
+      "description": "Ücretsiz demo talep edin veya ekibimizle görüşün. Kurumsal onboarding ve destek.",
+      "keywords": "Acentigo demo, turizm yazılımı iletişim, acente yazılımı"
+    },
+    "technology": {
+      "title": "Altyapı ve Güvenlik | Acentigo",
+      "description": "Bulut mimarisi, küresel CDN, otomatik ölçekleme, TLS şifreleme ve yüksek erişilebilirlik—kritik operasyonlar için.",
+      "keywords": "bulut turizm yazılımı, CDN, uptime, güvenlik, TLS"
+    }
+  },
+  "nav": {
+    "home": "Anasayfa",
+    "features": "Özellikler",
+    "technology": "Teknolojimiz",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "demoCta": "Demo Talep Et",
+    "menu": "Menü",
+    "localeTr": "Türkçe",
+    "localeEn": "English"
+  },
+  "footer": {
+    "tagline": "Profesyonel tur satış ve acente operasyon yazılımı.",
+    "sub": "Operasyonlarınızı dijitalleştirin, verimliliği artırın, tek platformda ölçekleyin.",
+    "product": "Ürün",
+    "support": "Destek",
+    "email": "E-posta",
+    "rights": "Tüm hakları saklıdır.",
+    "terms": "Kullanım Koşulları",
+    "privacy": "Gizlilik Politikası"
+  },
+  "hero": {
+    "badge": "Yüksek performanslı acenteler için tasarlandı",
+    "titleLine1": "Modern platform:",
+    "titleHighlight": "tur satışı ve acente operasyonu",
+    "description": "Tur yönetimi, rezervasyonlar, Stripe altyapısına uygun ödemeler, faturalama ve muhasebeyi tek güvenli ve sezgisel sistemde yönetin.",
+    "ctaDemo": "Demo Talep Et",
+    "ctaFeatures": "Özellikleri İncele"
+  },
+  "featuresGrid": {
+    "heading": "Kapsamlı",
+    "headingAccent": "özellik seti",
+    "sub": "Acentenizin ihtiyaç duyduğu her şey—modern arayüz, güçlü iş akışları ve gerçek tur operasyonlarına göre tasarlandı.",
+    "items": [
+      {
+        "title": "Tur yönetimi",
+        "description": "Programlar, tarihler, yetişkin/çocuk/bebek fiyatları, kontenjan ve kanal envanteri."
+      },
+      {
+        "title": "Rezervasyon",
+        "description": "Markalı formlar, yolcu bilgileri, yaş doğrulama, bekleme listeleri ve anlık müsaitlik."
+      },
+      {
+        "title": "Ödeme (Stripe uyumlu)",
+        "description": "Stripe ile kart tahsilatı, mutabakat, depozito ve bakiye; PCI yaklaşımına uygun fatura akışları."
+      },
+      {
+        "title": "Otel ve oda",
+        "description": "Tesis kartları, oda tipleri, kontenjan ve tur paketleriyle entegre satış."
+      },
+      {
+        "title": "Muhasebe ve BI",
+        "description": "Satış analitiği, komisyon defterleri, gelir-gider görünümleri ve finans exportları."
+      },
+      {
+        "title": "Müşteri CRM",
+        "description": "360° yolcu profili, geçmiş rezervasyonlar ve kampanya segmentleri."
+      },
+      {
+        "title": "Transfer ve filo",
+        "description": "Hat bazlı transferler, araç sınıfları, fiyatlandırma ve operasyon listeleri."
+      },
+      {
+        "title": "Mobil uyumlu",
+        "description": "Ekibiniz ve misafirleriniz her cihazdan çalışır."
+      }
+    ]
+  },
+  "howItWorks": {
+    "heading": "Nasıl",
+    "headingAccent": "çalışır?",
+    "sub": "Hızlı devreye alma—kademeli ve kontrollü geçiş.",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Acenteyi açın",
+        "description": "Çalışma alanı, roller ve kurumsal kimlik. İsterseniz önce sandbox ile eğitim."
+      },
+      {
+        "n": "02",
+        "title": "Envanteri yayınlayın",
+        "description": "Turları, otelleri ve kuralları yükleyin. Hazır olduğunuzda Stripe test/canlı bağlantısı."
+      },
+      {
+        "n": "03",
+        "title": "Rezervasyon alın",
+        "description": "Misafirler online rezervasyon yapar; onaylar, evraklar ve ödeme planları otomatik senkronize olur."
+      },
+      {
+        "n": "04",
+        "title": "Yönetin ve büyütün",
+        "description": "Operasyonu yürütün, tahsilatları mutabık tutun, panolarla büyümeyi yönetin."
+      }
+    ]
+  },
+  "benefits": {
+    "heading": "Neden",
+    "headingAccent": "Acentigo?",
+    "sub": "Kurumsal disiplin, modern SaaS hızı.",
+    "items": [
+      {
+        "title": "Hızlı benimsenir",
+        "description": "Rehberli kurulum, akıllı varsayılanlar ve ilk günden anlaşılır arayüz."
+      },
+      {
+        "title": "Güvenlik öncelikli",
+        "description": "Aktarımda ve depoda şifreleme, yetki modeli ve denetime uygun kayıtlar."
+      },
+      {
+        "title": "Ölçeklenir",
+        "description": "Butik acentelerden çok şubeli yapılara—kapasite ve süreçler büyümenize uyum sağlar."
+      },
+      {
+        "title": "Öngörülebilir maliyet",
+        "description": "Şeffaf model; altyapı sürprizleri yerine büyümeye odaklanın."
+      }
+    ]
+  },
+  "cta": {
+    "title1": "İşinizi büyütmeye",
+    "title2": "hazır mısınız?",
+    "description": "Acentigo’yu canlı görün. Yürüyüşü pazarınız, hacminiz ve ödeme yığınınıza (Stripe dahil) göre uyarlayalım.",
+    "demo": "Demo Talep Et",
+    "contact": "İletişime Geç"
+  },
+  "aboutPage": {
+    "badge": "Hikayemiz ve yönümüz",
+    "title": "Hakkımızda",
+    "intro": "Misafir deneyiminden ödün vermeden güvenilirlik, şeffaflık ve hız sunan operasyon yazılımı geliştiriyoruz.",
+    "missionTitle": "Misyonumuz",
+    "missionBody": "Dağınık araçların yerine tek platformla acente ve operatörleri güçlendirmek; manuel işleri azaltmak ve finansal kontrolü artırmak.",
+    "visionTitle": "Vizyonumuz",
+    "visionBody": "Bölgeler arası tur satış ekiplerinin güvendiği ortak işletim sistemi olmak—ticari, operasyonel ve finansal veriyi tek kaynakta birleştirmek.",
+    "valuesTitle": "Değerlerimiz",
+    "values": [
+      { "title": "Güvenilirlik", "desc": "Veri bütünlüğü, şeffaf SLA’lar ve net yol haritaları.", "icon": "🛡️" },
+      { "title": "İnovasyon", "desc": "Acentelerin gerçek iş akışına oturan sürekli ürün geliştirme.", "icon": "💡" },
+      { "title": "Müşteri odaklılık", "desc": "Sonuca bağlı onboarding ve destek.", "icon": "🤝" },
+      { "title": "Basitlik", "desc": "Güçlü altyapı, sade arayüz—daha az tıklama, daha az hata.", "icon": "✨" }
+    ],
+    "whyTitle": "Neden Acentigo?",
+    "whyBody": "Tur ve paket için derin süreçler, Stripe hizalı ödeme ve finansın kullandığı raporlama—yüksek erişilebilirlik için optimize edilmiş altyapı.",
+    "cta": "Bizimle iletişime geçin"
+  },
+  "technologyPage": {
+    "badge": "Altyapı ve performans",
+    "title": "Teknolojimiz",
+    "intro": "Acentigo; düşük gecikme, esnek ölçek ve derinlemesine güvenlik için bulut-native mimari üzerinde çalışır.",
+    "visualTitle": "Akışkan, esnek, güçlü",
+    "visualBody": "Sunduğumuz deneyim gibi platform da trafik artışlarına, yeni pazarlara ve uyumluluk beklentilerine uyum sağlar.",
+    "visualBullets": ["Esnek kaynak ve veri katmanları", "İsteğe bağlı yatay ölçekleme", "Sıfır kesinti hedefli yayınlar"],
+    "gridTitle": "Bu mimari neden önemli?",
+    "gridSub": "Kurumsal düzeyde güvenilirlik; tüketici kalitesinde deneyim.",
+    "statsTitle": "Güvenilirlik göstergeleri",
+    "features": [
+      { "icon": "☁️", "title": "Bulut-native", "description": "Yama yüklemeli sunucu yok—güncel ve sertleştirilmiş çalışma ortamı." },
+      { "icon": "🌍", "title": "Küresel CDN", "description": "Varlıklar ve API’ler müşterilerinize daha yakın edge noktalarından." },
+      { "icon": "⚡", "title": "Düşük gecikme", "description": "Optimize sorgular, önbellek ve akıcı arayüz desenleri." },
+      { "icon": "📈", "title": "Otomatik ölçekleme", "description": "Sezon, kampanya veya ani talep artışlarında kapasite takibi." },
+      { "icon": "🔄", "title": "Yüksek erişilebilirlik", "description": "Dayanıklı yollar, sağlık kontrolleri ve kontrollü degradasyon." },
+      { "icon": "🔒", "title": "Güvenlik duruşu", "description": "TLS, DDoS katmanları ve modern gizlilik beklentilerine uygun veri işleme." }
+    ],
+    "stats": [
+      { "value": "%99.9", "label": "Uptime hedefi" },
+      { "value": "<100ms", "label": "Tipik API p50*" },
+      { "value": "50+", "label": "CDN edge şehri" },
+      { "value": "TLS 1.2+", "label": "Aktarım şifrelemesi" }
+    ],
+    "statsNote": "*Bölge ve iş yüküne bağlıdır; referans kurulumlarda ölçülür."
+  },
+  "featuresPage": {
+    "badge": "Uçtan uca yetenekler",
+    "title": "Özellikler",
+    "intro": "Acentigo; ticari, operasyonel ve finansal süreçleri tek gerçek kaynakta birleştirir.",
+    "categories": [
+      {
+        "category": "Tur yönetimi",
+        "items": [
+          { "title": "Ürün oluşturma", "description": "Zengin programlar, medya, politikalar ve vitrin kontrolleri." },
+          { "title": "Fiyat ve tarih", "description": "Yetişkin/çocuk/bebek; erken rezervasyon; kanal bazlı fiyat listeleri." },
+          { "title": "Kontenjan yönetimi", "description": "Min/maks kapasite, kontenjan koruması, bekleme listeleri." }
+        ]
+      },
+      {
+        "category": "Rezervasyon sistemi",
+        "items": [
+          { "title": "Online rezervasyon", "description": "Hızlı, mobil öncelikli akışlar ve güvenli ödeme yönlendirmesi." },
+          { "title": "Yaş ve uygunluk", "description": "Teklif ve onayda otomatik yaş hesabı ve kural uygulaması." },
+          { "title": "Durum yaşam döngüsü", "description": "Bekleyen, onaylı, iptal, no-show—her adımda denetim izi." }
+        ]
+      },
+      {
+        "category": "Ödeme ve fatura",
+        "items": [
+          { "title": "Stripe entegrasyonu", "description": "Kart tahsilatı, iade ve rezervasyonla mutabakat—PCI bilincinde süreç." },
+          { "title": "Fatura ve evrak", "description": "Markalı faturalar, ödeme planları ve muhasebe aktarımları." },
+          { "title": "Alacak takibi", "description": "Vade, kısmi ödeme, depozito ve hatırlatmalar." }
+        ]
+      },
+      {
+        "category": "Otel yönetimi",
+        "items": [
+          { "title": "Tesis kataloğu", "description": "Oda tipleri, fiyat planları, medya ve sözleşme koşulları." },
+          { "title": "Müsaitlik ve opsiyon", "description": "Oda bazlı kontenjan, tur paketleri ve grup blokları." },
+          { "title": "Birleşik operasyon", "description": "Konaklamayı manifest ve transferlerle bağlama." }
+        ]
+      },
+      {
+        "category": "Muhasebe ve analitik",
+        "items": [
+          { "title": "Satış analitiği", "description": "Dönem kıyasları, ürün kırılımı, kanal katkısı." },
+          { "title": "Komisyon", "description": "İş ortağı payları, tahakkuk ve onaylı ödeme partileri." },
+          { "title": "Finansal raporlar", "description": "Gelir tanıma yardımları, gider etiketleri ve yönetim özetleri." },
+          { "title": "Ajans defteri", "description": "Denetim ve CFO için merkezi hareket kaydı." }
+        ]
+      },
+      {
+        "category": "Müşteri yönetimi",
+        "items": [
+          { "title": "Profil ve geçmiş", "description": "Yolcu kayıtları, belgeler, tercihler ve yaşam boyu değer sinyalleri." },
+          { "title": "Segmentasyon", "description": "Kampanya listeleri, özel fiyatlar ve iş ortağı teklifleri." },
+          { "title": "İletişim", "description": "Onay, değişiklik ve hatırlatma şablonları (e-posta/SMS kancaları)." }
+        ]
+      }
+    ]
+  },
+  "contactPage": {
+    "title": "İletişim",
+    "intro": "Size özel demo talep edin veya teknik sorunuzu iletin—çoğu bölgede bir iş günü içinde dönüş yapıyoruz.",
+    "emailTitle": "E-posta",
+    "phoneTitle": "Telefon",
+    "hoursTitle": "Çalışma saatleri",
+    "hoursLine": "Pazartesi - Cuma:",
+    "hoursValue": "09:00 - 18:00",
+    "formTitle": "Demo talep formu",
+    "success": "Başvurunuz alındı. En kısa sürede sizinle iletişime geçeceğiz.",
+    "errorGeneric": "Gönderilemedi. Lütfen tekrar deneyin.",
+    "errorNetwork": "Bağlantı hatası. İnternetinizi kontrol edin.",
+    "errorValidation": "Zorunlu alanları doldurun.",
+    "fields": {
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "company": "Şirket",
+      "message": "Mesaj",
+      "namePh": "Adınız Soyadınız",
+      "emailPh": "ornek@sirket.com",
+      "phonePh": "0555 123 45 67",
+      "companyPh": "Şirketinizin adı",
+      "messagePh": "Pazarlarınız, hacim ve mevcut araçlarınız hakkında kısa bilgi…"
+    },
+    "submit": "Gönder",
+    "submitting": "Gönderiliyor…"
+  },
+  "jsonLd": {
+    "softwareDescription": "Acenteler için bulut yazılımı: turlar, rezervasyonlar, Stripe uyumlu ödemeler, muhasebe ve raporlama."
+  }
+}

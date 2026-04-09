@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Acentigo | Travel Agency & Tour Sales Software",
+      "description": "Cloud tour management, online bookings, Stripe-ready payments, accounting, and reporting—built for modern travel agencies and DMCs.",
+      "keywords": "travel agency software, tour operator platform, reservation system, Stripe payments, travel CRM, DMC software, tour booking system"
+    },
+    "features": {
+      "title": "Product Features | Acentigo Travel Agency Platform",
+      "description": "Tour inventory, reservations, Stripe payment workflows, hotel modules, accounting, customer CRM, transfers, and mobile-ready booking—explore Acentigo capabilities.",
+      "keywords": "tour management features, travel booking software, Stripe integration, agency accounting, hotel module"
+    },
+    "about": {
+      "title": "About Acentigo | Travel Technology Company",
+      "description": "We help travel agencies digitize operations with secure, scalable software—mission, vision, and values behind the Acentigo platform.",
+      "keywords": "about Acentigo, travel technology, agency digital transformation"
+    },
+    "contact": {
+      "title": "Contact & Demo | Acentigo",
+      "description": "Request a demo or talk to our team about Acentigo for your travel agency. Enterprise-grade onboarding and support.",
+      "keywords": "Acentigo demo, travel software contact, agency software sales"
+    },
+    "technology": {
+      "title": "Infrastructure & Security | Acentigo",
+      "description": "Cloud-native architecture, global CDN, autoscaling, TLS encryption, and high availability for mission-critical travel operations.",
+      "keywords": "cloud travel software, CDN, uptime, security, TLS"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "technology": "Technology",
+    "about": "About",
+    "contact": "Contact",
+    "demoCta": "Request a demo",
+    "menu": "Menu",
+    "localeTr": "Türkçe",
+    "localeEn": "English"
+  },
+  "footer": {
+    "tagline": "Professional tour sales and agency operations software.",
+    "sub": "Digitize operations, improve margins, and scale with a single platform.",
+    "product": "Product",
+    "support": "Support",
+    "email": "Email",
+    "rights": "All rights reserved.",
+    "terms": "Terms of use",
+    "privacy": "Privacy policy"
+  },
+  "hero": {
+    "badge": "Built for high-performing travel agencies",
+    "titleLine1": "The modern platform for",
+    "titleHighlight": "tour sales & agency ops",
+    "description": "Manage tours, bookings, Stripe-powered payments, invoicing, and accounting in one secure, intuitive system—optimized for teams that outgrow spreadsheets.",
+    "ctaDemo": "Request a demo",
+    "ctaFeatures": "Explore features"
+  },
+  "featuresGrid": {
+    "heading": "Complete",
+    "headingAccent": "feature set",
+    "sub": "Everything your agency needs—modern UX, robust APIs, and workflows designed for real tour operations.",
+    "items": [
+      {
+        "title": "Tour management",
+        "description": "Itineraries, departures, pricing tiers (adult, child, infant), capacity controls, and channel-ready inventory."
+      },
+      {
+        "title": "Reservations",
+        "description": "Branded booking flows, passenger data, age validation, waitlists, and real-time availability."
+      },
+      {
+        "title": "Payments (Stripe-ready)",
+        "description": "Card payments via Stripe, settlement tracking, deposits and balances, and automated invoice workflows aligned with PCI best practices."
+      },
+      {
+        "title": "Hotels & rooms",
+        "description": "Property profiles, room types, allotments, and packaging with tours for seamless FIT and group programs."
+      },
+      {
+        "title": "Accounting & BI",
+        "description": "Sales analytics, commission ledgers, P&L views, cash positions, and export-ready reporting for finance teams."
+      },
+      {
+        "title": "Customer CRM",
+        "description": "360° traveler profiles, booking history, consent-aware communications, and segmentation for campaigns."
+      },
+      {
+        "title": "Transfers & fleet",
+        "description": "Route-based transfers, vehicle classes, dynamic pricing, and operational manifests for ground partners."
+      },
+      {
+        "title": "Mobile-first",
+        "description": "Responsive console and guest journeys—your team and customers work from any device."
+      }
+    ]
+  },
+  "howItWorks": {
+    "heading": "How it",
+    "headingAccent": "works",
+    "sub": "Launch faster with a guided rollout—no rip-and-replace drama.",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Onboard your agency",
+        "description": "Provision workspaces, roles, and branding. Optional sandbox to train staff before go-live."
+      },
+      {
+        "n": "02",
+        "title": "Publish inventory",
+        "description": "Load tours, hotels, and policies. Connect Stripe for live or test payments when you are ready."
+      },
+      {
+        "n": "03",
+        "title": "Capture bookings",
+        "description": "Guests book online; confirmations, documents, and payment schedules sync automatically."
+      },
+      {
+        "n": "04",
+        "title": "Operate & optimize",
+        "description": "Manage operations, reconcile payouts, and steer growth with dashboards your leadership team can trust."
+      }
+    ]
+  },
+  "benefits": {
+    "heading": "Why",
+    "headingAccent": "Acentigo?",
+    "sub": "Enterprise discipline with the speed of a modern SaaS product.",
+    "items": [
+      {
+        "title": "Fast to adopt",
+        "description": "Guided implementation, sensible defaults, and UX your team understands on day one—without custom dev projects."
+      },
+      {
+        "title": "Security-first",
+        "description": "Encryption in transit and at rest, least-privilege access, audit-friendly logs, and resilient backups."
+      },
+      {
+        "title": "Scales with you",
+        "description": "From boutique agencies to multi-branch operators—capacity, locales, and workflows grow with demand."
+      },
+      {
+        "title": "Predictable economics",
+        "description": "Transparent pricing without surprise infrastructure bills—focus budget on growth, not undifferentiated IT."
+      }
+    ]
+  },
+  "cta": {
+    "title1": "Ready to modernize",
+    "title2": "your travel business?",
+    "description": "See Acentigo in action. We will tailor the walkthrough to your agency model, markets, and payment stack—including Stripe.",
+    "demo": "Request a demo",
+    "contact": "Contact sales"
+  },
+  "aboutPage": {
+    "badge": "Our story & direction",
+    "title": "About Acentigo",
+    "intro": "We build operations software for travel sellers who need reliability, clarity, and speed—without compromising guest experience.",
+    "missionTitle": "Mission",
+    "missionBody": "Empower agencies and tour operators with a unified platform that replaces fragmented tools, reduces manual work, and improves financial control.",
+    "visionTitle": "Vision",
+    "visionBody": "Become the trusted operating system for travel distribution teams across regions—bridging commercial, operations, and finance on one ledger of truth.",
+    "valuesTitle": "Values",
+    "values": [
+      { "title": "Trust", "desc": "Data integrity, transparent SLAs, and honest roadmaps—not vaporware.", "icon": "🛡️" },
+      { "title": "Innovation", "desc": "Continuous delivery of features that map to how agencies really work.", "icon": "💡" },
+      { "title": "Customer success", "desc": "Implementation playbooks and responsive support tied to outcomes.", "icon": "🤝" },
+      { "title": "Simplicity", "desc": "Powerful under the hood, calm on the surface—fewer clicks, fewer errors.", "icon": "✨" }
+    ],
+    "whyTitle": "Why teams choose Acentigo",
+    "whyBody": "Deep workflows for tours and packages, Stripe-aligned payments, and reporting finance teams actually use—backed by infrastructure tuned for uptime.",
+    "cta": "Talk to us"
+  },
+  "technologyPage": {
+    "badge": "Infrastructure & performance",
+    "title": "Technology",
+    "intro": "Acentigo runs on a cloud-native stack engineered for low latency, elastic scale, and defense-in-depth security.",
+    "visualTitle": "Fluid, resilient, powerful",
+    "visualBody": "Like the experience we deliver—our platform adapts to traffic spikes, new markets, and evolving compliance expectations without drama.",
+    "visualBullets": ["Elastic compute & data tiers", "Horizontal scale on demand", "Zero-downtime friendly releases"],
+    "gridTitle": "Why this architecture matters",
+    "gridSub": "Corporate-grade reliability for consumer-grade experiences.",
+    "statsTitle": "Reliability signals",
+    "features": [
+      { "icon": "☁️", "title": "Cloud-native", "description": "No on-prem servers to patch—always on the latest hardened runtime." },
+      { "icon": "🌍", "title": "Global CDN", "description": "Edge-cached assets and APIs closer to your customers worldwide." },
+      { "icon": "⚡", "title": "Low latency", "description": "Optimized queries, caching, and streaming UI patterns for snappy consoles." },
+      { "icon": "📈", "title": "Autoscaling", "description": "Capacity follows demand—peak season, campaigns, or viral offers." },
+      { "icon": "🔄", "title": "High availability", "description": "Architected for resilient paths, health checks, and graceful degradation." },
+      { "icon": "🔒", "title": "Security posture", "description": "TLS, DDoS mitigation layers, and privacy-aware data handling aligned to modern expectations." }
+    ],
+    "stats": [
+      { "value": "99.9%", "label": "Uptime target" },
+      { "value": "<100ms", "label": "Typical API p50*" },
+      { "value": "50+", "label": "CDN edge cities" },
+      { "value": "TLS 1.2+", "label": "Encryption in transit" }
+    ],
+    "statsNote": "*Depends on region and workload; measured on reference deployments."
+  },
+  "featuresPage": {
+    "badge": "End-to-end capabilities",
+    "title": "Features",
+    "intro": "Acentigo unifies commercial, operational, and financial workflows so your agency runs on one source of truth.",
+    "categories": [
+      {
+        "category": "Tour management",
+        "items": [
+          { "title": "Product authoring", "description": "Rich itineraries, media galleries, policies, and merchandising controls." },
+          { "title": "Pricing & departures", "description": "Adult, child, infant tiers; early-bird rules; blackout dates; channel-specific price lists." },
+          { "title": "Capacity governance", "description": "Min/max party sizes, allotments, overbooking guards, and waitlist automation." }
+        ]
+      },
+      {
+        "category": "Reservations",
+        "items": [
+          { "title": "Online booking", "description": "Fast, mobile-first flows with localized content and secure checkout handoff." },
+          { "title": "Age & eligibility rules", "description": "Automatic age calculations and policy enforcement at quote and confirmation." },
+          { "title": "Lifecycle statuses", "description": "Pending, confirmed, cancelled, no-show—full audit trail per booking." }
+        ]
+      },
+      {
+        "category": "Payments & billing",
+        "items": [
+          { "title": "Stripe integration", "description": "Card capture, refunds, and reconciliation mapped to bookings—in a Stripe-aligned, PCI-conscious workflow." },
+          { "title": "Invoices & documents", "description": "Branded invoices, payment schedules, and export for accounting systems." },
+          { "title": "Receivables tracking", "description": "Aging, partial payments, deposits, and automated reminders." }
+        ]
+      },
+      {
+        "category": "Hotels",
+        "items": [
+          { "title": "Property catalog", "description": "Room types, rate plans, media, and contract terms in one library." },
+          { "title": "Availability & holds", "description": "Room-level availability with tour packaging and group blocks." },
+          { "title": "Unified operations", "description": "Link hotel stays to passenger manifests and transfer schedules." }
+        ]
+      },
+      {
+        "category": "Accounting & analytics",
+        "items": [
+          { "title": "Sales intelligence", "description": "Period comparisons, product mix, channel contribution, and cohort views." },
+          { "title": "Commissions", "description": "Partner splits, accruals, and payout batches with approval trails." },
+          { "title": "Financial statements", "description": "Revenue recognition helpers, expense tagging, and management reporting packs." },
+          { "title": "Agency ledger", "description": "Central journal of operational and financial events for auditors and CFOs." }
+        ]
+      },
+      {
+        "category": "Customer management",
+        "items": [
+          { "title": "Profiles & history", "description": "Passenger records, documents, preferences, and lifetime value signals." },
+          { "title": "Segmentation", "description": "Lists for campaigns, negotiated rates, and partner-specific offers." },
+          { "title": "Communications", "description": "Email/SMS hooks with templates for confirmations, changes, and reminders." }
+        ]
+      }
+    ]
+  },
+  "contactPage": {
+    "title": "Contact",
+    "intro": "Request a tailored demo or ask a technical question—we respond within one business day in most regions.",
+    "emailTitle": "Email",
+    "phoneTitle": "Phone",
+    "hoursTitle": "Business hours",
+    "hoursLine": "Monday – Friday:",
+    "hoursValue": "09:00 – 18:00 (GMT+3)",
+    "formTitle": "Demo request",
+    "success": "Thank you—we received your request and will reach out shortly.",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorNetwork": "Network error. Check your connection.",
+    "errorValidation": "Please complete the required fields.",
+    "fields": {
+      "name": "Full name",
+      "email": "Work email",
+      "phone": "Phone",
+      "company": "Company",
+      "message": "Message",
+      "namePh": "Jane Doe",
+      "emailPh": "you@company.com",
+      "phonePh": "+1 555 010 2030",
+      "companyPh": "Your agency name",
+      "messagePh": "Tell us about your markets, volumes, and current tools…"
+    },
+    "submit": "Send request",
+    "submitting": "Sending…"
+  },
+  "jsonLd": {
+    "softwareDescription": "Cloud software for travel agencies: tours, bookings, Stripe-ready payments, accounting, and reporting."
+  }
+}

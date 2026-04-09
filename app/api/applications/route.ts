@@ -15,10 +15,10 @@ export async function POST(req: Request) {
   try {
     body = await req.json()
   } catch {
-    return NextResponse.json({ error: 'Geçersiz istek' }, { status: 400 })
+    return NextResponse.json({ error: 'Invalid request' }, { status: 400 })
   }
   if (!body || typeof body !== 'object') {
-    return NextResponse.json({ error: 'Geçersiz istek' }, { status: 400 })
+    return NextResponse.json({ error: 'Invalid request' }, { status: 400 })
   }
   const o = body as Record<string, unknown>
   const name = trim(o.name, MAX_LEN.name)
@@ -27,7 +27,7 @@ export async function POST(req: Request) {
   const company = trim(o.company, MAX_LEN.company) || null
   const message = trim(o.message, MAX_LEN.message)
   if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !message) {
-    return NextResponse.json({ error: 'Zorunlu alanları doldurun' }, { status: 400 })
+    return NextResponse.json({ error: 'Please complete all required fields with a valid email.' }, { status: 400 })
   }
   const row = await prisma.application.create({
     data: { name, email, phone, company, message },
