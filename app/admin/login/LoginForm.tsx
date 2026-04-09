@@ -66,11 +66,12 @@ export default function LoginForm() {
           Demo başvurularını görüntülemek için oturum açın.
         </p>
         <p className="text-xs text-gray-500 mb-6 leading-relaxed border border-white/5 rounded-lg p-3 bg-white/[0.02]">
-          <strong className="text-gray-400">Yerel geliştirme:</strong> Önce{' '}
-          <code className="text-primary/90">npx prisma db push</code> ve{' '}
-          <code className="text-primary/90">npm run db:seed</code> çalıştırın. Varsayılan:{' '}
+          <strong className="text-gray-400">Yerel geliştirme:</strong> Postgres açık olsun:{' '}
+          <code className="text-primary/90">npm run docker:db</code>, ardından{' '}
+          <code className="text-primary/90">npx prisma migrate deploy</code> ve{' '}
+          <code className="text-primary/90">npm run db:seed</code>. Giriş:{' '}
           <code className="text-gray-400">admin@acentigo.com</code> /{' '}
-          <code className="text-gray-400">degistir123</code> (veya .env içindeki ADMIN_*).
+          <code className="text-gray-400">degistir123</code> (.env <code className="text-gray-500">ADMIN_*</code>).
         </p>
         <form onSubmit={handleSubmit} className="space-y-5">
           {error ? (
