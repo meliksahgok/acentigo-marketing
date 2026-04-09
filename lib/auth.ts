@@ -32,15 +32,20 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
+        // `sub` gerekli: middleware içindeki getToken ve bazı istemciler bunu bekler
+        token.sub = user.id
         token.id = user.id
         token.email = user.email
+        token.name = user.name
       }
       return token
     },
     async session({ session, token }) {
       if (session.user) {
-        session.user.id = token.id as string
-        session.user.email = (token.email as string) ?? session.user.email
+        const id = (token.sub as string) || (token.id as string)
+        if (id) session.user.id = id
+        session.user.email = (token.email as string) ?? session.user.email ?? ''
+        if (token.name !== undefined) session.user.name = token.name as string | null
       }
       return session
     },
