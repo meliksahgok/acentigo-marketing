@@ -1,4 +1,4 @@
-# SQLite canlı kullanım: kalıcı volume (ör. /data) şart. Vercel sunucusuz ortamda kullanmayın.
+# Docker: PostgreSQL ile birlikte docker-compose kullanın (bkz. docker-compose.yml)
 FROM node:20-alpine AS base
 RUN apk add --no-cache libc6-compat openssl
 

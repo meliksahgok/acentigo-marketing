@@ -8,6 +8,13 @@ Kurumsal tanıtım sayfası - Next.js + Vercel
 npm install
 ```
 
+PostgreSQL gerekir (Vercel’de Neon vb.; yerelde `docker compose up -d postgres` sonra `.env` içinde `DATABASE_URL=postgresql://acentigo:acentigo@localhost:5432/acentigo?schema=public`):
+
+```bash
+npx prisma migrate deploy
+npm run db:seed
+```
+
 ## Development
 
 ```bash
@@ -61,9 +68,9 @@ Cloudflare DNS ayarları:
 
 İletişim formu başvuruları veritabanına kaydedilir; panelde listelenir ve durum (Yeni / İletişim kuruldu / Kapatıldı) güncellenebilir.
 
-**Vercel / sunucusuz ortam:** SQLite dosyası kalıcı olmaz; ya **PostgreSQL** (`DATABASE_URL`, `provider = "postgresql"`) kullanın ya da uygulamayı **Docker / VPS** gibi kalıcı disk olan bir yerde çalıştırın.
+**Veritabanı:** Proje **PostgreSQL** kullanır (`prisma/migrations`). Yerelde Docker için `docker-compose.yml` (Postgres + web). **Vercel:** `VERCEL-DEPLOY.md` + `vercel.json` ile build sırasında `migrate deploy`.
 
-**Canlıda SQLite:** `DEPLOY-CANLI-SQLITE.md` ve `docker-compose.yml` — `docker compose up` ile volume üzerinde `prod.db` tutulur.
+**Docker:** `DEPLOY-DOCKER.md` — PostgreSQL + Compose.
 
 ## Dil ve SEO
 
@@ -79,5 +86,5 @@ Cloudflare DNS ayarları:
 - Tailwind CSS
 - React 18
 - next-intl (TR/EN, yerelleştirilmiş path’ler)
-- Prisma (SQLite geliştirme), NextAuth (credentials)
+- Prisma (PostgreSQL + migrations), NextAuth (credentials)
 

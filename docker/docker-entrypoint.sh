@@ -1,7 +1,9 @@
 #!/bin/sh
 set -e
-export DATABASE_URL="${DATABASE_URL:-file:/data/prod.db}"
-mkdir -p /data
 cd /app
-prisma db push --skip-generate
+if [ -z "$DATABASE_URL" ]; then
+  echo "DATABASE_URL is required"
+  exit 1
+fi
+prisma migrate deploy --skip-generate
 exec node server.js

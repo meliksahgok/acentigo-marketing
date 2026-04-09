@@ -12,7 +12,7 @@
 2. GitHub repository'lerinizden **"acentigo-marketing"** seçin
 3. **Framework Preset:** Next.js (otomatik algılanır)
 4. **Root Directory:** `./` (boş bırakın)
-5. **Build Command:** `npm run build` (otomatik)
+5. **Build Command:** Repoda `vercel.json` tanımlıdır — `npm run vercel-build` (`prisma migrate deploy` + build). Dashboard’da elle değiştirmeyin.
 6. **Output Directory:** `.next` (otomatik)
 7. **Install Command:** `npm install` (otomatik)
 
@@ -27,8 +27,15 @@ Panel ve iletişim formu için Vercel’de **Settings → Environment Variables*
 | `NEXTAUTH_URL` | Canlı site kök URL’si, örn. `https://acentigo-marketing.vercel.app` veya özel domain. |
 | `ADMIN_EMAIL` | Seed ile oluşturulacak admin e-postası (isteğe bağlı). |
 | `ADMIN_PASSWORD` | Seed şifresi (isteğe bağlı). |
+| `NEXT_PUBLIC_SITE_URL` | Örn. `https://acentigo.com` (sitemap / OG). |
 
-İlk veritabanı şeması için yerelde `npx prisma db push` benzeri işlemi Postgres’e uygulayın; Vercel build sırasında `prisma migrate deploy` eklemek isterseniz Build Command’ı özelleştirin. Admin kullanıcıyı oluşturmak için Postgres’e karşı bir kez `npm run db:seed` çalıştırmanız gerekir (ör. yerel makineden `DATABASE_URL` üretim adresi olacak şekilde).
+İlk deploy’da **build**, `prisma migrate deploy` ile şemayı Postgres’e uygular (`vercel.json`). Sonrasında **admin kullanıcı** için bir kez yerelden (veya CI’den) üretim `DATABASE_URL` ile:
+
+```bash
+npm run db:seed
+```
+
+Neon / Supabase bağlantı dizelerinde genelde `?sslmode=require` kullanın; Vercel’in build aşamasından veritabanına erişim için IP allowlist gerektirmeyen sağlayıcı tercih edin.
 
 ### Adım 4: Deploy
 1. **"Deploy"** butonuna tıklayın
