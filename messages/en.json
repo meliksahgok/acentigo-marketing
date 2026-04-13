@@ -3,12 +3,12 @@
     "home": {
       "title": "Acentigo | Travel Agency & Tour Sales Software",
       "description": "Cloud tour management, online bookings, Stripe-ready payments, accounting, and reporting—built for modern travel agencies and DMCs.",
-      "keywords": "travel agency software, tour operator platform, reservation system, Stripe payments, travel CRM, DMC software, tour booking system"
+      "keywords": "travel agency software, tour operator platform, reservation system, Stripe payments, travel CRM, DMC software, tour booking system, XML integration, supplier connectivity"
     },
     "features": {
       "title": "Product Features | Acentigo Travel Agency Platform",
       "description": "Tour inventory, reservations, Stripe payment workflows, hotel modules, accounting, customer CRM, transfers, and mobile-ready booking—explore Acentigo capabilities.",
-      "keywords": "tour management features, travel booking software, Stripe integration, agency accounting, hotel module"
+      "keywords": "tour management features, travel booking software, Stripe integration, agency accounting, hotel module, XML API, supplier feeds"
     },
     "about": {
       "title": "About Acentigo | Travel Technology Company",
@@ -23,7 +23,7 @@
     "technology": {
       "title": "Infrastructure & Security | Acentigo",
       "description": "Cloud-native architecture, global CDN, autoscaling, TLS encryption, and high availability for mission-critical travel operations.",
-      "keywords": "cloud travel software, CDN, uptime, security, TLS"
+      "keywords": "cloud travel software, CDN, uptime, security, TLS, XML integration"
     }
   },
   "nav": {
@@ -52,13 +52,14 @@
     "titleLine1": "The modern platform for",
     "titleHighlight": "tour sales & agency ops",
     "description": "Manage tours, bookings, Stripe-powered payments, invoicing, and accounting in one secure, intuitive system—optimized for teams that outgrow spreadsheets.",
+    "xmlIntegrations": "10+ XML integrations: supplier, OTA, and channel feeds for inventory and rate sync.",
     "ctaDemo": "Request a demo",
     "ctaFeatures": "Explore features"
   },
   "featuresGrid": {
     "heading": "Complete",
     "headingAccent": "feature set",
-    "sub": "Everything your agency needs—modern UX, robust APIs, and workflows designed for real tour operations.",
+    "sub": "Everything your agency needs—modern UX, robust APIs, 10+ XML integrations, and workflows designed for real tour operations.",
     "items": [
       {
         "title": "Tour management",
@@ -91,6 +92,10 @@
       {
         "title": "Mobile-first",
         "description": "Responsive console and guest journeys—your team and customers work from any device."
+      },
+      {
+        "title": "10+ XML integrations",
+        "description": "Ready, configurable XML pipelines for suppliers, channels, and custom feeds—product and availability in sync."
       }
     ]
   },
@@ -107,7 +112,7 @@
       {
         "n": "02",
         "title": "Publish inventory",
-        "description": "Load tours, hotels, and policies. Connect Stripe for live or test payments when you are ready."
+        "description": "Load tours, hotels, and policies; ingest external inventory and rates via 10+ XML integrations. Connect Stripe for live or test payments when you are ready."
       },
       {
         "n": "03",
@@ -141,13 +146,17 @@
       {
         "title": "Predictable economics",
         "description": "Transparent pricing without surprise infrastructure bills—focus budget on growth, not undifferentiated IT."
+      },
+      {
+        "title": "Broad integration footprint",
+        "description": "10+ XML connectors for common supplier and channel formats—extend with custom schemas and mapping."
       }
     ]
   },
   "cta": {
     "title1": "Ready to modernize",
     "title2": "your travel business?",
-    "description": "See Acentigo in action. We will tailor the walkthrough to your agency model, markets, and payment stack—including Stripe.",
+    "description": "See Acentigo in action. We will tailor the walkthrough to your agency model, markets, 10+ XML integrations, and payment stack—including Stripe.",
     "demo": "Request a demo",
     "contact": "Contact sales"
   },
@@ -167,16 +176,16 @@
       { "title": "Simplicity", "desc": "Powerful under the hood, calm on the surface—fewer clicks, fewer errors.", "icon": "✨" }
     ],
     "whyTitle": "Why teams choose Acentigo",
-    "whyBody": "Deep workflows for tours and packages, Stripe-aligned payments, and reporting finance teams actually use—backed by infrastructure tuned for uptime.",
+    "whyBody": "Deep workflows for tours and packages, 10+ XML integrations with the supplier ecosystem, Stripe-aligned payments, and reporting finance teams actually use—backed by infrastructure tuned for uptime.",
     "cta": "Talk to us"
   },
   "technologyPage": {
     "badge": "Infrastructure & performance",
     "title": "Technology",
-    "intro": "Acentigo runs on a cloud-native stack engineered for low latency, elastic scale, and defense-in-depth security.",
+    "intro": "Acentigo runs on a cloud-native stack engineered for low latency, elastic scale, 10+ XML integrations, and defense-in-depth security.",
     "visualTitle": "Fluid, resilient, powerful",
     "visualBody": "Like the experience we deliver—our platform adapts to traffic spikes, new markets, and evolving compliance expectations without drama.",
-    "visualBullets": ["Elastic compute & data tiers", "Horizontal scale on demand", "Zero-downtime friendly releases"],
+    "visualBullets": ["Elastic compute & data tiers", "Horizontal scale on demand", "Zero-downtime friendly releases", "10+ XML feeds and channel adapters"],
     "gridTitle": "Why this architecture matters",
     "gridSub": "Corporate-grade reliability for consumer-grade experiences.",
     "statsTitle": "Reliability signals",
@@ -186,20 +195,22 @@
       { "icon": "⚡", "title": "Low latency", "description": "Optimized queries, caching, and streaming UI patterns for snappy consoles." },
       { "icon": "📈", "title": "Autoscaling", "description": "Capacity follows demand—peak season, campaigns, or viral offers." },
       { "icon": "🔄", "title": "High availability", "description": "Architected for resilient paths, health checks, and graceful degradation." },
-      { "icon": "🔒", "title": "Security posture", "description": "TLS, DDoS mitigation layers, and privacy-aware data handling aligned to modern expectations." }
+      { "icon": "🔒", "title": "Security posture", "description": "TLS, DDoS mitigation layers, and privacy-aware data handling aligned to modern expectations." },
+      { "icon": "📡", "title": "XML & channel integrations", "description": "10+ ready XML integrations with reliable ingest and observable queues for supplier and OTA feeds." }
     ],
     "stats": [
       { "value": "99.9%", "label": "Uptime target" },
       { "value": "<100ms", "label": "Typical API p50*" },
       { "value": "50+", "label": "CDN edge cities" },
-      { "value": "TLS 1.2+", "label": "Encryption in transit" }
+      { "value": "TLS 1.2+", "label": "Encryption in transit" },
+      { "value": "10+", "label": "XML integrations" }
     ],
     "statsNote": "*Depends on region and workload; measured on reference deployments."
   },
   "featuresPage": {
     "badge": "End-to-end capabilities",
     "title": "Features",
-    "intro": "Acentigo unifies commercial, operational, and financial workflows so your agency runs on one source of truth.",
+    "intro": "Acentigo unifies commercial, operational, and financial workflows so your agency runs on one source of truth—with 10+ XML integrations to the outside world.",
     "categories": [
       {
         "category": "Tour management",
@@ -207,6 +218,14 @@
           { "title": "Product authoring", "description": "Rich itineraries, media galleries, policies, and merchandising controls." },
           { "title": "Pricing & departures", "description": "Adult, child, infant tiers; early-bird rules; blackout dates; channel-specific price lists." },
           { "title": "Capacity governance", "description": "Min/max party sizes, allotments, overbooking guards, and waitlist automation." }
+        ]
+      },
+      {
+        "category": "XML & integrations",
+        "items": [
+          { "title": "10+ ready XML connectors", "description": "Pre-defined endpoints for common supplier and channel formats—faster go-live and repeatable sync." },
+          { "title": "Inventory & rate sync", "description": "Pull tour, hotel, and allotment data over XML with validation and conflict checks." },
+          { "title": "Custom schema & mapping", "description": "Partner-specific fields, transform rules, and versioning for an extensible integration layer." }
         ]
       },
       {
@@ -268,6 +287,6 @@
     "mailHint": "Default recipient: info@acentigo.com"
   },
   "jsonLd": {
-    "softwareDescription": "Cloud software for travel agencies: tours, bookings, Stripe-ready payments, accounting, and reporting."
+    "softwareDescription": "Cloud software for travel agencies: tours, bookings, 10+ XML integrations, Stripe-ready payments, accounting, and reporting."
   }
 }

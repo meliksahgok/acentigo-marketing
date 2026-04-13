@@ -35,6 +35,10 @@ export default function Hero() {
             {t('description')}
           </p>
 
+          <p className="text-base md:text-lg text-primary/90 font-medium max-w-2xl mx-auto animate-fade-in-up [animation-delay:500ms]">
+            {t('xmlIntegrations')}
+          </p>
+
           <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8 animate-fade-in-up [animation-delay:600ms]">
             <Link
               href="/contact"

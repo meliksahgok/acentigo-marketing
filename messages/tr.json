@@ -3,12 +3,12 @@
     "home": {
       "title": "Acentigo | Acente ve Tur Satış Yazılımı",
       "description": "Bulut tabanlı tur yönetimi, online rezervasyon, Stripe uyumlu ödeme akışları, muhasebe ve raporlama—modern acenteler için tek platform.",
-      "keywords": "tur satış sistemi, acente yazılımı, rezervasyon yazılımı, Stripe ödeme, tur operatörü CRM, DMC yazılımı"
+      "keywords": "tur satış sistemi, acente yazılımı, rezervasyon yazılımı, Stripe ödeme, tur operatörü CRM, DMC yazılımı, XML entegrasyonu, OTA bağlantısı"
     },
     "features": {
       "title": "Özellikler | Acentigo Tur ve Acente Platformu",
       "description": "Tur envanteri, rezervasyonlar, Stripe odaklı ödeme süreçleri, otel modülü, muhasebe, müşteri CRM, transfer ve mobil uyumlu satış—Acentigo yetenekleri.",
-      "keywords": "tur yönetimi özellikleri, acente yazılımı, Stripe entegrasyonu, muhasebe modülü, otel modülü"
+      "keywords": "tur yönetimi özellikleri, acente yazılımı, Stripe entegrasyonu, muhasebe modülü, otel modülü, XML API, tedarikçi entegrasyonu"
     },
     "about": {
       "title": "Hakkımızda | Acentigo",
@@ -23,7 +23,7 @@
     "technology": {
       "title": "Altyapı ve Güvenlik | Acentigo",
       "description": "Bulut mimarisi, küresel CDN, otomatik ölçekleme, TLS şifreleme ve yüksek erişilebilirlik—kritik operasyonlar için.",
-      "keywords": "bulut turizm yazılımı, CDN, uptime, güvenlik, TLS"
+      "keywords": "bulut turizm yazılımı, CDN, uptime, güvenlik, TLS, XML entegrasyonu"
     }
   },
   "nav": {
@@ -52,13 +52,14 @@
     "titleLine1": "Modern platform:",
     "titleHighlight": "tur satışı ve acente operasyonu",
     "description": "Tur yönetimi, rezervasyonlar, Stripe altyapısına uygun ödemeler, faturalama ve muhasebeyi tek güvenli ve sezgisel sistemde yönetin.",
+    "xmlIntegrations": "10+ XML entegrasyonu: tedarikçi, OTA ve kanal beslemeleriyle envanter ve fiyat senkronu.",
     "ctaDemo": "Demo Talep Et",
     "ctaFeatures": "Özellikleri İncele"
   },
   "featuresGrid": {
     "heading": "Kapsamlı",
     "headingAccent": "özellik seti",
-    "sub": "Acentenizin ihtiyaç duyduğu her şey—modern arayüz, güçlü iş akışları ve gerçek tur operasyonlarına göre tasarlandı.",
+    "sub": "Acentenizin ihtiyaç duyduğu her şey—modern arayüz, güçlü iş akışları, 10+ XML entegrasyonu ve gerçek tur operasyonlarına göre tasarlandı.",
     "items": [
       {
         "title": "Tur yönetimi",
@@ -91,6 +92,10 @@
       {
         "title": "Mobil uyumlu",
         "description": "Ekibiniz ve misafirleriniz her cihazdan çalışır."
+      },
+      {
+        "title": "10+ XML entegrasyonu",
+        "description": "Hazır ve yapılandırılabilir XML akışları; tedarikçi, kanal ve özel beslemelerle ürün ve müsaitlik senkronu."
       }
     ]
   },
@@ -107,7 +112,7 @@
       {
         "n": "02",
         "title": "Envanteri yayınlayın",
-        "description": "Turları, otelleri ve kuralları yükleyin. Hazır olduğunuzda Stripe test/canlı bağlantısı."
+        "description": "Turları, otelleri ve kuralları yükleyin; 10+ XML entegrasyonu ile dış envanter ve fiyatları besleyin. Hazır olduğunuzda Stripe test/canlı bağlantısı."
       },
       {
         "n": "03",
@@ -141,13 +146,17 @@
       {
         "title": "Öngörülebilir maliyet",
         "description": "Şeffaf model; altyapı sürprizleri yerine büyümeye odaklanın."
+      },
+      {
+        "title": "Geniş entegrasyon ağı",
+        "description": "10+ XML bağlantısı ile bilinen tedarikçi ve kanal formatlarına yakın; özel şema ve mapping ile genişletilebilir."
       }
     ]
   },
   "cta": {
     "title1": "İşinizi büyütmeye",
     "title2": "hazır mısınız?",
-    "description": "Acentigo’yu canlı görün. Yürüyüşü pazarınız, hacminiz ve ödeme yığınınıza (Stripe dahil) göre uyarlayalım.",
+    "description": "Acentigo’yu canlı görün. Yürüyüşü pazarınız, hacminiz, 10+ XML entegrasyonu ve ödeme yığınınıza (Stripe dahil) göre uyarlayalım.",
     "demo": "Demo Talep Et",
     "contact": "İletişime Geç"
   },
@@ -167,16 +176,16 @@
       { "title": "Basitlik", "desc": "Güçlü altyapı, sade arayüz—daha az tıklama, daha az hata.", "icon": "✨" }
     ],
     "whyTitle": "Neden Acentigo?",
-    "whyBody": "Tur ve paket için derin süreçler, Stripe hizalı ödeme ve finansın kullandığı raporlama—yüksek erişilebilirlik için optimize edilmiş altyapı.",
+    "whyBody": "Tur ve paket için derin süreçler, 10+ XML entegrasyonu ile tedarikçi ekosistemi, Stripe hizalı ödeme ve finansın kullandığı raporlama—yüksek erişilebilirlik için optimize edilmiş altyapı.",
     "cta": "Bizimle iletişime geçin"
   },
   "technologyPage": {
     "badge": "Altyapı ve performans",
     "title": "Teknolojimiz",
-    "intro": "Acentigo; düşük gecikme, esnek ölçek ve derinlemesine güvenlik için bulut-native mimari üzerinde çalışır.",
+    "intro": "Acentigo; düşük gecikme, esnek ölçek, 10+ XML entegrasyonu ve derinlemesine güvenlik için bulut-native mimari üzerinde çalışır.",
     "visualTitle": "Akışkan, esnek, güçlü",
     "visualBody": "Sunduğumuz deneyim gibi platform da trafik artışlarına, yeni pazarlara ve uyumluluk beklentilerine uyum sağlar.",
-    "visualBullets": ["Esnek kaynak ve veri katmanları", "İsteğe bağlı yatay ölçekleme", "Sıfır kesinti hedefli yayınlar"],
+    "visualBullets": ["Esnek kaynak ve veri katmanları", "İsteğe bağlı yatay ölçekleme", "Sıfır kesinti hedefli yayınlar", "10+ XML beslemesi ve kanal adaptörleri"],
     "gridTitle": "Bu mimari neden önemli?",
     "gridSub": "Kurumsal düzeyde güvenilirlik; tüketici kalitesinde deneyim.",
     "statsTitle": "Güvenilirlik göstergeleri",
@@ -186,20 +195,22 @@
       { "icon": "⚡", "title": "Düşük gecikme", "description": "Optimize sorgular, önbellek ve akıcı arayüz desenleri." },
       { "icon": "📈", "title": "Otomatik ölçekleme", "description": "Sezon, kampanya veya ani talep artışlarında kapasite takibi." },
       { "icon": "🔄", "title": "Yüksek erişilebilirlik", "description": "Dayanıklı yollar, sağlık kontrolleri ve kontrollü degradasyon." },
-      { "icon": "🔒", "title": "Güvenlik duruşu", "description": "TLS, DDoS katmanları ve modern gizlilik beklentilerine uygun veri işleme." }
+      { "icon": "🔒", "title": "Güvenlik duruşu", "description": "TLS, DDoS katmanları ve modern gizlilik beklentilerine uygun veri işleme." },
+      { "icon": "📡", "title": "XML ve kanal entegrasyonları", "description": "10+ hazır XML entegrasyonu; tedarikçi ve OTA beslemeleri için güvenilir ingest ve izlenebilir iş kuyrukları." }
     ],
     "stats": [
       { "value": "%99.9", "label": "Uptime hedefi" },
       { "value": "<100ms", "label": "Tipik API p50*" },
       { "value": "50+", "label": "CDN edge şehri" },
-      { "value": "TLS 1.2+", "label": "Aktarım şifrelemesi" }
+      { "value": "TLS 1.2+", "label": "Aktarım şifrelemesi" },
+      { "value": "10+", "label": "XML entegrasyonu" }
     ],
     "statsNote": "*Bölge ve iş yüküne bağlıdır; referans kurulumlarda ölçülür."
   },
   "featuresPage": {
     "badge": "Uçtan uca yetenekler",
     "title": "Özellikler",
-    "intro": "Acentigo; ticari, operasyonel ve finansal süreçleri tek gerçek kaynakta birleştirir.",
+    "intro": "Acentigo; ticari, operasyonel ve finansal süreçleri tek gerçek kaynakta birleştirir—10+ XML entegrasyonu ile dış dünyaya bağlanır.",
     "categories": [
       {
         "category": "Tur yönetimi",
@@ -207,6 +218,14 @@
           { "title": "Ürün oluşturma", "description": "Zengin programlar, medya, politikalar ve vitrin kontrolleri." },
           { "title": "Fiyat ve tarih", "description": "Yetişkin/çocuk/bebek; erken rezervasyon; kanal bazlı fiyat listeleri." },
           { "title": "Kontenjan yönetimi", "description": "Min/maks kapasite, kontenjan koruması, bekleme listeleri." }
+        ]
+      },
+      {
+        "category": "XML ve entegrasyonlar",
+        "items": [
+          { "title": "10+ hazır XML bağlantısı", "description": "Yaygın tedarikçi ve kanal formatları için önceden tanımlı uçlar; hızlı açılış ve tekrarlanabilir senkron." },
+          { "title": "Envanter ve fiyat senkronu", "description": "Tur, otel ve kontenjan verisini XML üzerinden çekme, doğrulama ve çakışma kontrolü." },
+          { "title": "Özel şema ve mapping", "description": "Partner özel alanları, dönüşüm kuralları ve sürümleme ile genişletilebilir entegrasyon katmanı." }
         ]
       },
       {
@@ -268,6 +287,6 @@
     "mailHint": "Varsayılan alıcı: info@acentigo.com"
   },
   "jsonLd": {
-    "softwareDescription": "Acenteler için bulut yazılımı: turlar, rezervasyonlar, Stripe uyumlu ödemeler, muhasebe ve raporlama."
+    "softwareDescription": "Acenteler için bulut yazılımı: turlar, rezervasyonlar, 10+ XML entegrasyonu, Stripe uyumlu ödemeler, muhasebe ve raporlama."
   }
 }
