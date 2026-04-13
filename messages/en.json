@@ -260,25 +260,12 @@
     "hoursTitle": "Business hours",
     "hoursLine": "Monday – Friday:",
     "hoursValue": "09:00 – 18:00 (GMT+3)",
-    "formTitle": "Demo request",
-    "success": "Thank you—we received your request and will reach out shortly.",
-    "errorGeneric": "Something went wrong. Please try again.",
-    "errorNetwork": "Network error. Check your connection.",
-    "errorValidation": "Please complete the required fields.",
-    "fields": {
-      "name": "Full name",
-      "email": "Work email",
-      "phone": "Phone",
-      "company": "Company",
-      "message": "Message",
-      "namePh": "Jane Doe",
-      "emailPh": "you@company.com",
-      "phonePh": "+1 555 010 2030",
-      "companyPh": "Your agency name",
-      "messagePh": "Tell us about your markets, volumes, and current tools…"
-    },
-    "submit": "Send request",
-    "submitting": "Sending…"
+    "ctaTitle": "Demo or sales",
+    "ctaDescription": "Click the button below to open your email app with the subject and message pre-filled. Edit before sending if you like.",
+    "mailSubject": "Acentigo — Demo / information request",
+    "mailBody": "Hello,\n\nI would like more information about Acentigo or to request a demo.\n\nAgency / company name:\nMarkets or priorities:\n\nBest regards,",
+    "mailButton": "Compose email",
+    "mailHint": "Default recipient: info@acentigo.com"
   },
   "jsonLd": {
     "softwareDescription": "Cloud software for travel agencies: tours, bookings, Stripe-ready payments, accounting, and reporting."

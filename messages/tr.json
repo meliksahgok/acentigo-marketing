@@ -260,25 +260,12 @@
     "hoursTitle": "Çalışma saatleri",
     "hoursLine": "Pazartesi - Cuma:",
     "hoursValue": "09:00 - 18:00",
-    "formTitle": "Demo talep formu",
-    "success": "Başvurunuz alındı. En kısa sürede sizinle iletişime geçeceğiz.",
-    "errorGeneric": "Gönderilemedi. Lütfen tekrar deneyin.",
-    "errorNetwork": "Bağlantı hatası. İnternetinizi kontrol edin.",
-    "errorValidation": "Zorunlu alanları doldurun.",
-    "fields": {
-      "name": "Ad Soyad",
-      "email": "E-posta",
-      "phone": "Telefon",
-      "company": "Şirket",
-      "message": "Mesaj",
-      "namePh": "Adınız Soyadınız",
-      "emailPh": "ornek@sirket.com",
-      "phonePh": "0555 123 45 67",
-      "companyPh": "Şirketinizin adı",
-      "messagePh": "Pazarlarınız, hacim ve mevcut araçlarınız hakkında kısa bilgi…"
-    },
-    "submit": "Gönder",
-    "submitting": "Gönderiliyor…"
+    "ctaTitle": "Demo veya satış",
+    "ctaDescription": "Aşağıdaki düğmeye tıklayın; e-posta uygulamanız açılır, konu ve metin hazır gelir. Göndermeden önce düzenleyebilirsiniz.",
+    "mailSubject": "Acentigo — Demo / bilgi talebi",
+    "mailBody": "Merhaba,\n\nAcentigo ürünü hakkında bilgi almak veya demo talep etmek istiyorum.\n\nŞirket / acente adı:\nPazarlar veya öncelik:\n\nSaygılarımla,",
+    "mailButton": "E-posta ile yaz",
+    "mailHint": "Varsayılan alıcı: info@acentigo.com"
   },
   "jsonLd": {
     "softwareDescription": "Acenteler için bulut yazılımı: turlar, rezervasyonlar, Stripe uyumlu ödemeler, muhasebe ve raporlama."

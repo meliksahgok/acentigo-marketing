@@ -1,7 +1,7 @@
 import { setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
-import ContactForm from '@/components/ContactForm'
 import { buildPageMetadata } from '@/lib/buildPageMetadata'
+import { organizationJsonLd } from '@/lib/site'
 
 type Props = { params: { locale: string } }
 
@@ -12,6 +12,8 @@ export async function generateMetadata({ params }: Props) {
 export default async function ContactPage({ params }: Props) {
   setRequestLocale(params.locale)
   const t = await getTranslations('contactPage')
+  const to = organizationJsonLd.email
+  const mailtoHref = `mailto:${to}?subject=${encodeURIComponent(t('mailSubject'))}&body=${encodeURIComponent(t('mailBody'))}`
 
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
@@ -35,8 +37,8 @@ export default async function ContactPage({ params }: Props) {
                 <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary mr-3 text-sm">✉️</span>
                 {t('emailTitle')}
               </h3>
-              <a href="mailto:info@acentigo.com" className="text-gray-300 hover:text-primary transition-colors block text-lg">
-                info@acentigo.com
+              <a href={`mailto:${to}`} className="text-gray-300 hover:text-primary transition-colors block text-lg">
+                {to}
               </a>
             </div>
 
@@ -65,7 +67,17 @@ export default async function ContactPage({ params }: Props) {
           </div>
 
           <div className="lg:col-span-2 animate-fade-in-up [animation-delay:400ms]">
-            <ContactForm />
+            <div className="bg-zinc-900/50 backdrop-blur-sm rounded-3xl border border-white/10 p-8 md:p-10 shadow-2xl">
+              <h2 className="text-2xl font-bold text-white mb-4">{t('ctaTitle')}</h2>
+              <p className="text-gray-400 mb-8 leading-relaxed">{t('ctaDescription')}</p>
+              <a
+                href={mailtoHref}
+                className="inline-flex w-full sm:w-auto justify-center items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-hover hover:shadow-[0_0_20px_rgba(229,61,21,0.4)] transition-all duration-300"
+              >
+                {t('mailButton')}
+              </a>
+              <p className="mt-6 text-sm text-gray-500">{t('mailHint')}</p>
+            </div>
           </div>
         </div>
       </div>
